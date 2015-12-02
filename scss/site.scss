@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "OpenSansCondensedLight";
+    src: url("../fonts/OpenSansCondensedLight/OpenSansCondensedLight.eot");
+    src: url("../fonts/OpenSansCondensedLight/OpenSansCondensedLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansCondensedLight/OpenSansCondensedLight.woff") format("woff"),
+    url("../fonts/OpenSansCondensedLight/OpenSansCondensedLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansCondensedLightItalic"; */
+@font-face {
+    font-family: "OpenSansCondensedLightItalic";
+    src: url("../fonts/OpenSansCondensedLightItalic/OpenSansCondensedLightItalic.eot");
+    src: url("../fonts/OpenSansCondensedLightItalic/OpenSansCondensedLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansCondensedLightItalic/OpenSansCondensedLightItalic.woff") format("woff"),
+    url("../fonts/OpenSansCondensedLightItalic/OpenSansCondensedLightItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansCondensedBold"; */
+@font-face {
+    font-family: "OpenSansCondensedBold";
+    src: url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.eot");
+    src: url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"),
+    url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$open-sans-light: "OpenSansCondensedLight";
+body, h1, h2, h3, h4, h5, h6, p, article{
+  font-family: $open-sans-light;
+}
+header{
+  margin: 20px 0 0;
+}
+.agency_logo{
+  border: none;
+  img{
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+.agency_description{
+  display: block;
+  margin-top: 10px;
+  padding-left: 30px;
+  color: #666;
+  font-size: 18px;
+  line-height: 20px;
+  border-left: 1px solid #666;
+}
+.agency_contacts{
+  margin: 10px;
+}
+.agency_mail{
+  font-size: 18px;
+  color: #006699;
+  a{
+    color: #006699;
+    text-decoration: underline;
+  }
+}
+.agency_phones{
+  margin-left: 10px;
+  color: #666;
+  a{
+    color: #666;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.main_menu{
+  margin: 25px 0 0;
+  padding: 5px 0;
+  background: #efefef;
+  -webkit-box-shadow: 0 4px 4px -2px #999;
+   -moz-box-shadow: 0 4px 4px -2px #999;
+        box-shadow: 0 4px 4px -2px #999;
+  a{
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    &:hover{
+      color: #cc0066;
+      text-decoration: underline;
+    }
+  }
+}
+.menu{
+  li{
+    padding-left: 20px;
+    background: url(../images/menu_symbol.png) no-repeat;
+    background-position: center left;
+    &:first-child{
+      padding: 0;
+      background: none;
+    }
+  }
+}
+.orbit{
+  margin: 0;
+  h2, h3{
+    font-family: $open-sans-light;
+    color: #fff;
+    text-align: right;
+    margin: 0;
+    text-shadow: 1px 1px 1px black, 0 0 1em black;
+  }
+  h2{
+    margin-top: 180px;
+    line-height: 62px;
+    font-weight: bold;
+    font-size: 62px;
+  }
+  h3{
+    font-size: 31px;
+  }
+}
+.orbit-previous, .orbit-next{
+  color: #000;
+  background: #fff;
+  font-size: 24px;
+  &:hover{
+    color: #fff;
+  }
+}
+.orbit-slide{
+  position: relative;
+  height: 600px;
+}
+.orbit-bullets button{
+  width: 10px;
+  height: 10px;
+  &.is-active{
+    background-color: #006699;
+  }
+}
+.form_wrapper{
+  position: relative;
+}
+.orbit_form{
+  position: absolute;
+  color: #999;
+  font-size: 16px;
+  background: #fff;
+  bottom: 0;
+  height: 505px;
+  width: 100%;
+  padding: 20px 30px;
+    h3{
+      color: #006699;
+      text-shadow: none;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    span{
+      display: block;
+      margin: 5px 0;
+    }
+    .button_search{
+      float: right;
+      margin-right: 0;
+      padding: 7px 30px;
+      background: #006699;
+      &:hover{
+        background: #005599;
+      }
+    }
+    .button_search_open{
+      display: block;
+      text-transform: uppercase;
+      position: absolute;
+      width: 100%;
+      bottom: -16px;
+      left: 0;
+      background: #cc0066;
+      padding: 15px 25px;
+      font-size: 18px;
+      text-align: left;
+      font-weight: bold;
+      .fa{
+        font-size: 16px;
+        margin-right: 5px;
+      }
+    }
+}
+.accomodations_main .heading{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 48px;
+  color: #006699;
+    h2{
+      position: relative;
+      span{
+        background: #fff;
+        padding: 0 15px;
+        position: relative;
+        z-index: 1;
+      }
+      &:before{
+        background: #006699;
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+      }
+    }
+}
+.accomodation_container{
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+  margin: 0 0 20px;
+  img{
+    height: 320px;
+    min-width: 100%;
+    transition: .2s;
+  }
+  p{
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    height: 52px;
+    width: 100%;
+    padding: 8px 5px;
+    font-size: 24px;
+    background: #fff;
+    transition: .2s;
+  }
+  .accomodation_about{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    background: rgba(255,255,255,.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    transition: .2s;
+      h3{
+        margin: 40px 0 20px;
+        color: #333;
+        font-weight: bold;
+      }
+      span{
+        display: block;
+        text-align: center;
+        color: #333;
+        font-size: 24px;
+      }
+      button{
+        display: block;
+        background: #006699;
+        width: 130px;
+        padding: 10px;
+        margin: 20px auto 0;
+        font-size: 24px;
+      }
+  }
+  &:hover{
+    img{
+      transition: .2s;
+    }
+    p{
+      bottom: -70px;
+      transition: .2s;
+    }
+    .accomodation_about{
+      opacity: 1;
+      transition: .2s;
+    }
+  }
+}

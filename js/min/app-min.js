@@ -1,0 +1,1 @@
+$(document).foundation(),$("#slide-one").backstretch("images/villa2.jpg"),$("#slide-two").backstretch("images/villa.jpg");

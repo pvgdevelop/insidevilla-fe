@@ -1,0 +1,179 @@
+!!! 5
+%html
+  %head
+    %title Insitevilla – Main Page
+    %meta{:charset => "UTF-8"}
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
+    %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :media => "screen", :rel => "stylesheet"}
+    %link{:href => "css/app.css", :media => "screen", :rel => "stylesheet"}
+    %link{:href => "css/site.css", :media => "screen", :rel => "stylesheet"}
+  %body
+    %header
+      .row
+        .columns.large-3
+          %a.agency_logo{:href => "index.html"}
+            %img{:src => "images/logo.png"}
+        .columns.large-3
+          %span.agency_description Агентство недвижимости <br> о. Пхукет
+        .columns.large-6.text-right
+          .agency_contacts
+            %span.agency_mail
+              %i.fa.fa-envelope
+              %a{:href => "mailto:info@insidevilla.com "} info@insidevilla.com
+            %span.agency_phones
+              Viber
+              %a{:href => "callto:+66947769961"} +66947769961
+              , WhatsApp
+              %a{:href => "callto:+66943511068"} +66943511068
+      %section.main_menu
+        .row
+          .columns.large-12
+            %nav
+              %ul.menu
+                %li
+                  %a{:href => "#"} Аренда
+                %li
+                  %a{:href => "#"} Продажа
+                %li
+                  %a{:href => "#"} Добавить
+                %li
+                  %a{:href => "#"} Услуги
+                %li
+                  %a{:href => "#"} Инфо
+                %li
+                  %a{:href => "#"} О нас
+    %section.orbit_slider
+      .orbit(aria-label="Favorite Phuket Places" data-orbit){:role => "slider"}
+        %ul.orbit-container
+          %button.orbit-previous(aria-label="previous")
+            %i.fa.fa-angle-left
+          %button.orbit-next(aria-label="next")
+            %i.fa.fa-angle-right
+          %li.is-active.orbit-slide#slide-one
+            .row
+              .columns.large-12
+                %h2 Аренда недвижимости
+                %h3 Лучшие предложения на рынке о. Пхукета
+          %li.orbit-slide#slide-two
+            .row
+              .columns.large-12
+                %h2 Аренда недвижимости
+                %h3 Здесь описание второго слайда
+          %li.orbit-slide#slide-three
+            .row
+              .columns.large-12
+                %h2 Аренда недвижимости
+                %h3 Здесь описание третьего слайда
+          %li.orbit-slide#slide-four
+            .row
+              .columns.large-12
+                %h2 Аренда недвижимости
+                %h3 Здесь описание четвертого слайда
+        .row
+          .columns.large-offset-1.large-4.form_wrapper
+            %form.orbit_form
+              %h3
+                Поиск
+              .row
+                .columns.large-2
+                  %span Статус:
+                .columns.large-10
+                  %select
+                    %option Аренда
+                .columns.large-2
+                  %span Район:
+                .columns.large-10
+                  %select
+                    %option Все районы
+                .columns.large-2
+                  %span Тип:
+                .columns.large-10
+                  %select
+                    %option Все, аппартаменты
+                .columns.large-2
+                  %span Спальни:
+                .columns.large-10
+                  %select
+                    %option Любое количество
+                .columns.large-2
+                  %span Ванные:
+                .columns.large-10
+                  %select
+                    %option От 1 до 2
+                .columns.large-2
+                  %span До&nbsp;моря:
+                .columns.large-10
+                  %select
+                    %option Любое расстояние
+                .columns.large-12
+                  %a.button.button_search{:href => "#"}
+                    %i.fa.fa-search
+                %a.button.button_search_open{:href => "#"}
+                  %i.fa.fa-search
+                  Поиск
+        %nav.orbit-bullets
+          %button.is-active(data-slide="0")
+            %span.show-for-sr First slide details.
+          %button(data-slide="1")
+            %span.show-for-sr Second slide details.
+          %button(data-slide="2")
+            %span.show-for-sr Third slide details.
+          %button(data-slide="3")
+            %span.show-for-sr 4 slide details.
+    %section.accomodations_main
+      .row
+        .columns.large-12.heading
+          %h2
+            %span Посмотрите некоторые варианты размещения
+        .columns.large-6
+          .accomodation_container
+            %img{:src => "images/villas/villa_preview1.jpg"}
+            %p Вилла Пальма де Тай
+            %a.accomodation_about{:href => "#"}
+              %h3.text-center Вилла Пальма де Тай
+              %span.accomodation_area Район: Равай
+              %span.accomodation_price Цена: от 35.000 бат в месяц
+              %button.button Подробнее
+        .columns.large-6
+          .accomodation_container
+            %img{:src => "images/villas/villa_preview2.jpg"}
+            %p Вилла с бассейном
+            %a.accomodation_about{:href => "#"}
+              %h3.text-center Вилла с бассейном
+              %span.accomodation_area Район: Равай
+              %span.accomodation_price Цена: от 35.000 бат в месяц
+              %button.button Подробнее
+        .columns.large-4
+          .accomodation_container
+            %img{:src => "images/villas/villa_preview3.jpg"}
+            %p Вилла Саншайн
+            %a.accomodation_about{:href => "#"}
+              %h3.text-center Вилла Саншайн
+              %span.accomodation_area Район: Равай
+              %span.accomodation_price Цена: от 35.000 бат в месяц
+              %button.button Подробнее
+        .columns.large-4
+          .accomodation_container
+            %img{:src => "images/villas/villa_preview4.jpg"}
+            %p Вилла SUNBEAM
+            %a.accomodation_about{:href => "#"}
+              %h3.text-center Вилла SUNBEAM
+              %span.accomodation_area Район: Равай
+              %span.accomodation_price Цена: от 35.000 бат в месяц
+              %button.button Подробнее
+        .columns.large-4
+          .accomodation_container
+            %img{:src => "images/villas/villa_preview5.jpg"}
+            %p Вилла Сансет
+            %a.accomodation_about{:href => "#"}
+              %h3.text-center Вилла Сансет
+              %span.accomodation_area Район: Равай
+              %span.accomodation_price Цена: от 35.000 бат в месяц
+              %button.button Подробнее
+
+
+    %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js")
+    %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js")
+    %script(src="js/foundation.js")
+    %script(src="js/app.js")

@@ -3227,6 +3227,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/arrow-down.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 860,
+		"inputAbbreviatedPath": "\/images\/arrow-down.png",
+		"outputAbbreviatedPath": "\/images\/arrow-down.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/arrow-up.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 848,
+		"inputAbbreviatedPath": "\/images\/arrow-up.png",
+		"outputAbbreviatedPath": "\/images\/arrow-up.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/icon_price.png": {
 		"fileType": 32768,
 		"ignore": 0,

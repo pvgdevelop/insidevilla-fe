@@ -325,7 +325,7 @@ header{
 .steps_of_work .step{
   position: relative;
   background: #efefef;
-  margin: 25px 0;
+  margin: 23px 0;
   img{
     display: block;
     position: absolute;
@@ -336,6 +336,7 @@ header{
     padding: 30px 30px;
     background: #006699;
     float: left;
+    z-index: 1;
   }
   span{
     display: block;
@@ -345,11 +346,66 @@ header{
     line-height: 26px;
   }
 }
-.steps_of_work .step-one:before{
+.steps_of_work .step-one:before,
+.steps_of_work .step-two:before,
+.steps_of_work .step-three:before,
+.steps_of_work .step-four:before,
+.steps_of_work .step-five:before{
   display: block;
   position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 19px;
+  text-align: center;
+  border-radius: 50%;
   content: "1";
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -10px;
   color: #fff;
+  background: #5badff;
+  border: 1px solid #fff;
+  z-index: 2;
+}
+.steps_of_work .step-two:before{
+  content: "2";
+}
+.steps_of_work .step-three:before{
+  content: "3";
+}
+.steps_of_work .step-four:before{
+  content: "4";
+}
+.steps_of_work .step-five:before{
+  content: "5";
+}
+.steps_of_work .step-one:after,
+.steps_of_work .step-three:after{
+  display: block;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 28px;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -5px;
+  z-index: 2;
+  background: url('../images/arrow-down.png') no-repeat;
+  transform: rotate(5deg);
+}
+.steps_of_work .step-three:after{
+  left: 60%;
+  margin-left: 2px;
+}
+.steps_of_work .step-two:after,
+.steps_of_work .step-four:after{
+  display: block;
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 32px;
+  top: -40px;
+  left: 50%;
+  margin-left: 17px;
+  z-index: 2;
+  background: url('../images/arrow-up.png') no-repeat;
 }

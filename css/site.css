@@ -265,6 +265,8 @@ header {
     background: url("../images/why-pattern.png"); }
   .why_we_are img {
     margin: 0 0 10px; }
+  .why_we_are .heading h2 {
+    margin: 20px 0 30px; }
   .why_we_are .heading span {
     background: #efefef;
     color: #333; }

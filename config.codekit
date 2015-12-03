@@ -3227,6 +3227,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/icon_price.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5029,
+		"inputAbbreviatedPath": "\/images\/icon_price.png",
+		"outputAbbreviatedPath": "\/images\/icon_price.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon_service.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5191,
+		"inputAbbreviatedPath": "\/images\/icon_service.png",
+		"outputAbbreviatedPath": "\/images\/icon_service.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon_team.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13044,
+		"inputAbbreviatedPath": "\/images\/icon_team.png",
+		"outputAbbreviatedPath": "\/images\/icon_team.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3253,7 +3286,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 479334,
+		"initialSize": 296598,
 		"inputAbbreviatedPath": "\/images\/villa.jpg",
 		"outputAbbreviatedPath": "\/images\/villa.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -3322,6 +3355,17 @@
 		"initialSize": 68768,
 		"inputAbbreviatedPath": "\/images\/villas\/villa_preview5.jpg",
 		"outputAbbreviatedPath": "\/images\/villas\/villa_preview5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/why-pattern.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5607,
+		"inputAbbreviatedPath": "\/images\/why-pattern.png",
+		"outputAbbreviatedPath": "\/images\/why-pattern.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

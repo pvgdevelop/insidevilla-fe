@@ -322,3 +322,34 @@ header{
     background: #333;
   }
 }
+.steps_of_work .step{
+  position: relative;
+  background: #efefef;
+  margin: 25px 0;
+  img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    height: 90px;
+    padding: 30px 30px;
+    background: #006699;
+    float: left;
+  }
+  span{
+    display: block;
+    padding: 6px 0;
+    margin-left: 105px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+.steps_of_work .step-one:before{
+  display: block;
+  position: absolute;
+  content: "1";
+  top: 0;
+  left: 0;
+  color: #fff;
+}

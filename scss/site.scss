@@ -513,6 +513,24 @@ footer{
     color: #fff;
     font-size: 18px;
   }
+  .social_buttons a{
+    display: inline-block;
+    margin: 5px 3px 8px;
+    color: #838383;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    &:hover{
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -ms-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      color: #fff;
+    }
+  }
   h3{
     font-size: 30px;
     text-transform: uppercase;
@@ -524,5 +542,11 @@ footer{
   }
   .button-crimson{
     width: 100%;
+  }
+  hr{
+    margin: 20px;
+  }
+  span{
+    color: #838383;
   }
 }

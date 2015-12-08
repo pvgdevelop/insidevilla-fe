@@ -446,6 +446,22 @@ footer {
     display: block;
     color: #fff;
     font-size: 18px; }
+  footer .social_buttons a {
+    display: inline-block;
+    margin: 5px 3px 8px;
+    color: #838383;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+    footer .social_buttons a:hover {
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -ms-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      color: #fff; }
   footer h3 {
     font-size: 30px;
     text-transform: uppercase;
@@ -455,3 +471,7 @@ footer {
     text-transform: uppercase; }
   footer .button-crimson {
     width: 100%; }
+  footer hr {
+    margin: 20px; }
+  footer span {
+    color: #838383; }

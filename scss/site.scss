@@ -145,30 +145,40 @@ header{
 .form_wrapper{
   position: relative;
 }
-.orbit_form{
+.orbit_form_wrapper{
   position: absolute;
-  color: #999;
-  font-size: 16px;
-  background: #fff;
-  bottom: 0;
   height: 505px;
+  bottom: 0;
   width: 100%;
-  padding: 20px 30px;
+    .orbit_form{
+      display: none;
+      color: #999;
+      font-size: 16px;
+      padding: 20px 30px 45px;
+      background: #fff;
+      bottom: 51px;
+      margin: 0;
+    }
     span{
       display: block;
       margin: 10px 0;
     }
     .button_search{
+      font-size: 18px;
       float: right;
       margin-right: 0;
       padding: 7px 30px;
       background: #006699;
+      .fa{
+        margin-right: 3px;
+      }
       &:hover{
         background: #005599;
       }
     }
     .button_search_open{
       display: block;
+      position: absolute;
       text-transform: uppercase;
       position: absolute;
       width: 100%;
@@ -185,7 +195,7 @@ header{
       }
     }
 }
-.form_wrapper .orbit_form h3{
+.form_wrapper .orbit_form_wrapper h3{
   color: #006699;
   text-shadow: none;
   text-align: left;

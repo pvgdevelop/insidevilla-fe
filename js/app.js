@@ -7,3 +7,8 @@ $("#slide-three").backstretch("images/villa2.jpg");
 $("#slide-four").backstretch("images/villa.jpg");
 // Reviews BG
 $("#customer_reviews").backstretch("images/review_bg.png");
+
+$(".button_search_open").click(function () {
+  $(".orbit_form").toggle();
+  $(".button_text").toggle();
+});

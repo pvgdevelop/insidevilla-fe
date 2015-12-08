@@ -107,11 +107,12 @@
                   %select
                     %option Любое расстояние
                 .columns.large-12
-                  %a.button.button_search{:href => "#"}
+                  %button.button.button_search{:href => "#"}
+                    Найти
                     %i.fa.fa-search
-                %a.button.button_search_open{:href => "#"}
-                  %i.fa.fa-search
-                  Поиск
+              %a.button.button_search_open{:href => "#"}
+                %i.fa.fa-angle-up
+                Открыть поиск
         %nav.orbit-bullets
           %button.is-active(data-slide="0")
             %span.show-for-sr First slide details.
@@ -211,6 +212,109 @@
         .columns.large-centered.large-6.heading
           %h2
             %span 5 шагов работы с нами
+        .columns.large-3
+          .step.step-one
+            %img{:src => "images/step-one.png"}
+            %span
+              %a{:href => "#"} Оставьте заявку <br>
+              или позвоните <br> нам
+        .columns.large-4.large-offset-1
+          .step.step-three
+            %img{:src => "images/step-three.png"}
+            %span
+              Индивидуальное предложение для Вас и выбор понравившегося Вам варианта
+        .columns.large-3.large-offset-1
+          .step.step-five
+            %img{:src => "images/step-five.png"}
+            %span
+              Наслаждение<br>отдыхом на<br>Пхукете
+        .columns.large-3.large-offset-2
+          .step.step-two
+            %img{:src => "images/step-two.png"}
+            %span
+              Уточнения и согласование деталей
+        .columns.large-3.large-offset-2.end
+          .step.step-four
+            %img{:src => "images/step-four.png"}
+            %span
+              Наслаждение<br>отдыхом на<br>Пхукете
+    %section.customer_reviews.clearfix#customer_reviews
+      .row
+        .columns.large-centered.large-6.heading
+          %h2
+            %span Отзывы наших клиентов
+        .columns.large-12.reviews_slider
+          .orbit(aria-label="Customers Reviews" data-orbit){:role => "slider"}
+            %ul.orbit-container
+              %button.orbit-previous(aria-label="previous")
+                %i.fa.fa-angle-left
+              %button.orbit-next(aria-label="next")
+                %i.fa.fa-angle-right
+              %li.is-active.orbit-slide
+                .row
+                  .columns.large-10.large-centered.review-slide
+                    .review_wrapper
+                      .columns.large-3
+                        %img{:src => "images/customer.jpg"}
+                      .columns.large-9
+                        %p Lorem ipsum...
+              %li.orbit-slide
+                .row
+                  .columns.large-10.large-centered.review-slide
+                    .review_wrapper
+                      .columns.large-2
+                        %img{:src => "images/customer.jpg"}
+                      .columns.large-10
+                        %p Lorem ipsum...
+          %a.button.button-crimson{:href => "#"} Еще отзывы
+    %section.contact-form.clearfix
+      .row
+        .columns.large-12
+          %form
+            .columns.large-4
+              %input{:type=>"text", :placeholder=>"Имя*"}
+              %input{:type=>"text", :placeholder=>"Телефон*"}
+              %input{:type=>"email", :placeholder=>"Email*"}
+            .columns.large-8
+              %textarea{:placeholder=>"Ваше сообщение"}
+            %button.button.button-crimson{:href => "#"} Отправить
+    %footer
+      .row
+        .columns.large-3
+          %h3 Новости и акции
+          %form
+            %input{:type=>"email", :placeholder=>"Email*"}
+            %button.button.button-crimson{:href => "#"} Подписаться
+        .columns.large-2
+          %h4 Аренда
+          %a{:href => "#"} Апартаменты
+          %a{:href => "#"} Дом
+          %a{:href => "#"} Вилла
+          %a{:href => "#"} Земля
+        .columns.large-2
+          %h4 Продажа
+          %a{:href => "#"} Вилла
+          %a{:href => "#"} Дом
+          %a{:href => "#"} Апартаменты
+          %a{:href => "#"} Проекты
+          %a{:href => "#"} Земля
+        .columns.large-2
+          %h4 Услуги
+          %a{:href => "#"} Аренда
+          %a{:href => "#"} Транспорт
+          %a{:href => "#"} Экскурсии
+          %a{:href => "#"} Шоппинг
+        .columns.large-2
+          %h4 Инфо-блок
+          %a{:href => "#"} Инструкции
+          %a{:href => "#"} Пхукет
+          %a{:href => "#"} Разное
+        .columns.large-1
+          %h4 О нас
+          %a{:href => "#"} Контакты
+          %a{:href => "#"} О нас
+          %a{:href => "#"} Отзывы
+
 
 
     %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js")

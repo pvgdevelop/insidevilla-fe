@@ -162,15 +162,16 @@
                   </select>
                 </div>
                 <div class='columns large-12'>
-                  <a class='button button_search' href='#'>
+                  <button class='button button_search' href='#'>
+                    Найти
                     <i class='fa fa-search'></i>
-                  </a>
+                  </button>
                 </div>
-                <a class='button button_search_open' href='#'>
-                  <i class='fa fa-search'></i>
-                  Поиск
-                </a>
               </div>
+              <a class='button button_search_open' href='#'>
+                <i class='fa fa-angle-up'></i>
+                Открыть поиск
+              </a>
             </form>
           </div>
         </div>
@@ -357,6 +358,118 @@
         </div>
       </div>
     </section>
+    <section class='customer_reviews clearfix' id='customer_reviews'>
+      <div class='row'>
+        <div class='columns large-centered large-6 heading'>
+          <h2>
+            <span>Отзывы наших клиентов</span>
+          </h2>
+        </div>
+        <div class='columns large-12 reviews_slider'>
+          <div aria-label='Customers Reviews' class='orbit' data-orbit role='slider'>
+            <ul class='orbit-container'>
+              <button aria-label='previous' class='orbit-previous'>
+                <i class='fa fa-angle-left'></i>
+              </button>
+              <button aria-label='next' class='orbit-next'>
+                <i class='fa fa-angle-right'></i>
+              </button>
+              <li class='is-active orbit-slide'>
+                <div class='row'>
+                  <div class='columns large-10 large-centered review-slide'>
+                    <div class='review_wrapper'>
+                      <div class='columns large-3'>
+                        <img src='images/customer.jpg'>
+                      </div>
+                      <div class='columns large-9'>
+                        <p>Lorem ipsum...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='orbit-slide'>
+                <div class='row'>
+                  <div class='columns large-10 large-centered review-slide'>
+                    <div class='review_wrapper'>
+                      <div class='columns large-2'>
+                        <img src='images/customer.jpg'>
+                      </div>
+                      <div class='columns large-10'>
+                        <p>Lorem ipsum...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a class='button button-crimson' href='#'>Еще отзывы</a>
+        </div>
+      </div>
+    </section>
+    <section class='contact-form clearfix'>
+      <div class='row'>
+        <div class='columns large-12'>
+          <form>
+            <div class='columns large-4'>
+              <input placeholder='Имя*' type='text'>
+              <input placeholder='Телефон*' type='text'>
+              <input placeholder='Email*' type='email'>
+            </div>
+            <div class='columns large-8'>
+              <textarea placeholder='Ваше сообщение'></textarea>
+            </div>
+            <button class='button button-crimson' href='#'>Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class='row'>
+        <div class='columns large-3'>
+          <h3>Новости и акции</h3>
+          <form>
+            <input placeholder='Email*' type='email'>
+            <button class='button button-crimson' href='#'>Подписаться</button>
+          </form>
+        </div>
+        <div class='columns large-2'>
+          <h4>Аренда</h4>
+          <a href='#'>Апартаменты</a>
+          <a href='#'>Дом</a>
+          <a href='#'>Вилла</a>
+          <a href='#'>Земля</a>
+        </div>
+        <div class='columns large-2'>
+          <h4>Продажа</h4>
+          <a href='#'>Вилла</a>
+          <a href='#'>Дом</a>
+          <a href='#'>Апартаменты</a>
+          <a href='#'>Проекты</a>
+          <a href='#'>Земля</a>
+        </div>
+        <div class='columns large-2'>
+          <h4>Услуги</h4>
+          <a href='#'>Аренда</a>
+          <a href='#'>Транспорт</a>
+          <a href='#'>Экскурсии</a>
+          <a href='#'>Шоппинг</a>
+        </div>
+        <div class='columns large-2'>
+          <h4>Инфо-блок</h4>
+          <a href='#'>Инструкции</a>
+          <a href='#'>Пхукет</a>
+          <a href='#'>Разное</a>
+        </div>
+        <div class='columns large-1'>
+          <h4>О нас</h4>
+          <a href='#'>Контакты</a>
+          <a href='#'>О нас</a>
+          <a href='#'>Отзывы</a>
+        </div>
+      </div>
+    </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
     <script src='js/foundation.js'></script>

@@ -85,20 +85,20 @@ header {
     padding: 0;
     background: none; }
 
-.orbit {
+.orbit_slider .orbit {
   margin: 0; }
-  .orbit h2, .orbit h3 {
+  .orbit_slider .orbit h2, .orbit_slider .orbit h3 {
     font-family: "OpenSansCondensedLight";
     color: #fff;
     text-align: right;
     margin: 0;
     text-shadow: 1px 1px 1px black, 0 0 1em black; }
-  .orbit h2 {
+  .orbit_slider .orbit h2 {
     margin-top: 180px;
     line-height: 62px;
     font-weight: bold;
     font-size: 62px; }
-  .orbit h3 {
+  .orbit_slider .orbit h3 {
     font-size: 31px; }
 
 .orbit-previous, .orbit-next {
@@ -108,7 +108,7 @@ header {
   .orbit-previous:hover, .orbit-next:hover {
     color: #fff; }
 
-.orbit-slide {
+.orbit_slider .orbit-slide {
   position: relative;
   height: 600px; }
 
@@ -130,11 +130,6 @@ header {
   height: 505px;
   width: 100%;
   padding: 20px 30px; }
-  .orbit_form h3 {
-    color: #006699;
-    text-shadow: none;
-    text-align: left;
-    margin-bottom: 20px; }
   .orbit_form span {
     display: block;
     margin: 10px 0; }
@@ -160,6 +155,12 @@ header {
     .orbit_form .button_search_open .fa {
       font-size: 16px;
       margin-right: 5px; }
+
+.form_wrapper .orbit_form h3 {
+  color: #006699;
+  text-shadow: none;
+  text-align: left;
+  margin-bottom: 20px; }
 
 .heading {
   text-transform: uppercase;
@@ -234,11 +235,11 @@ header {
       margin: 20px auto 0;
       font-size: 24px; }
   .accomodation_container:hover img {
-    -webkit-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    -ms-transform: scale(1.25);
-    -o-transform: scale(1.25);
-    transform: scale(1.25); }
+    -webkit-transform: scale(1.125);
+    -moz-transform: scale(1.125);
+    -ms-transform: scale(1.125);
+    -o-transform: scale(1.125);
+    transform: scale(1.125); }
   .accomodation_container:hover p {
     bottom: -70px;
     transition: .2s; }
@@ -357,3 +358,92 @@ header {
   margin-left: 17px;
   z-index: 2;
   background: url("../images/arrow-up.png") no-repeat; }
+
+.customer_reviews {
+  margin: 30px 0 0;
+  padding: 80px 0 0px; }
+  .customer_reviews:before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 42px;
+    height: 72px;
+    top: 20px;
+    left: 50%;
+    margin-left: -21px;
+    background: url("../images/review_pattern.png"); }
+  .customer_reviews .heading h2:before {
+    display: none; }
+  .customer_reviews .heading span {
+    background: transparent;
+    color: #333; }
+
+.reviews_slider .orbit .orbit-slide .review-slide {
+  height: 300px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #fff; }
+  .reviews_slider .orbit .orbit-slide .review-slide img {
+    margin-top: 45px;
+    border-radius: 50%;
+    border: 3px solid #fff; }
+  .reviews_slider .orbit .orbit-slide .review-slide p {
+    margin: 45px 30px; }
+.reviews_slider .orbit .orbit-previous,
+.reviews_slider .orbit .orbit-next {
+  padding: 8px 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 40px; }
+.reviews_slider .orbit .orbit-previous {
+  padding-right: 15px; }
+.reviews_slider .orbit .orbit-next {
+  padding-left: 15px; }
+
+.button-crimson {
+  display: block;
+  width: 162px;
+  margin: 15px auto 30px;
+  padding: 8px 20px 10px;
+  font-size: 30px;
+  background: #c06;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.button-crimson:hover {
+  background: #c10066;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.contact-form {
+  padding: 40px 0 0 10px;
+  background: #069; }
+  .contact-form textarea, .contact-form input {
+    font-size: 20px; }
+  .contact-form textarea {
+    height: 149px;
+    resize: none; }
+
+footer {
+  padding: 20px 0;
+  background: #333;
+  color: #fff; }
+  footer a {
+    display: block;
+    color: #fff;
+    font-size: 18px; }
+  footer h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  footer h4 {
+    font-size: 20px;
+    text-transform: uppercase; }
+  footer .button-crimson {
+    width: 100%; }

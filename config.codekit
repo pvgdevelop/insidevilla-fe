@@ -3249,6 +3249,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/customer.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 239918,
+		"inputAbbreviatedPath": "\/images\/customer.jpg",
+		"outputAbbreviatedPath": "\/images\/customer.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/icon_price.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3300,6 +3311,28 @@
 		"initialSize": 935,
 		"inputAbbreviatedPath": "\/images\/menu_symbol.png",
 		"outputAbbreviatedPath": "\/images\/menu_symbol.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/review_bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 746365,
+		"inputAbbreviatedPath": "\/images\/review_bg.png",
+		"outputAbbreviatedPath": "\/images\/review_bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/review_pattern.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6306,
+		"inputAbbreviatedPath": "\/images\/review_pattern.png",
+		"outputAbbreviatedPath": "\/images\/review_pattern.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -42,6 +42,10 @@ header{
     margin-top: 12px;
   }
 }
+.button{
+  background: #069;
+  font-size: 18px;
+}
 .agency_description{
   display: block;
   margin-top: 10px;
@@ -212,6 +216,12 @@ header{
         position: relative;
         z-index: 1;
       }
+      small{
+        display: block;
+        margin: 20px 0;
+        font-size: 40px;
+        color: inherit;
+      }
       &:before{
         background: #006699;
         content: "";
@@ -320,6 +330,9 @@ header{
   }
   .heading h2{
     margin: 20px 0 30px;
+    small{
+      color: #333;
+    }
   }
   .heading span{
     background: #efefef;
@@ -629,7 +642,7 @@ footer{
   text-transform: uppercase;
   background: #006699;
 }
-.catalogue_accomodations .accomodation_container{
+.accomodation_container{
   position: relative;
   .accomodation_about button{
     display: block;
@@ -675,6 +688,12 @@ footer{
   .placement{
     right: 64px;
   }
+}
+.accomodations_main .accomodation_about button{
+  position: static;
+  width: 130px;
+  padding: 10px;
+  margin: 20px auto 0;
 }
 .paginator{
   text-align: center;
@@ -733,5 +752,71 @@ footer{
     h4{
       background: #3399ff;
     }
+  }
+}
+.gray_block .accomodation_container{
+  p{
+    background: #efefef;
+    text-align: left;
+  }
+}
+.see_also{
+  padding-bottom: 40px;
+  .heading{
+    margin-bottom: 50px;
+  }
+  .see_more{
+    color: #069;
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-bottom: 1px dotted #069;
+  }
+}
+.services_header{
+  height: 320px;
+}
+.service_heading{
+  margin-top: 80px;
+  padding: 30px 0;
+  text-align: center;
+  color: #069;
+  background: url('../images/heading_bg_large.png') no-repeat;
+  background-position: center;
+  h2{
+    width: 320px;
+    padding-top: 20px;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin: 0px auto;
+    background: url('../images/hbg1.png') no-repeat;
+    background-position: center 27px;
+    background-size: 100%;
+    font-weight: bold;
+  }
+}
+.article_block{
+  margin: 40px 0;
+  p{
+    font-size: 18px;
+  }
+  img{
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  h2{
+    line-height: 48px;
+    margin-bottom: 20px;
+    color: #069;
+    font-size: 48px;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+  .button{
+    display: block;
+    width: 226px;
+    padding: 18px 0;
+    margin: 15px auto 30px;
+    text-transform: uppercase;
+    font-size: 26px;
   }
 }

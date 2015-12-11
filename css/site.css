@@ -30,6 +30,10 @@ header {
     width: 100%;
     margin-top: 12px; }
 
+.button {
+  background: #069;
+  font-size: 18px; }
+
 .agency_description {
   display: block;
   margin-top: 10px;
@@ -181,6 +185,11 @@ header {
       padding: 0 15px;
       position: relative;
       z-index: 1; }
+    .heading h2 small {
+      display: block;
+      margin: 20px 0;
+      font-size: 40px;
+      color: inherit; }
     .heading h2:before {
       background: #006699;
       content: "";
@@ -274,6 +283,8 @@ header {
     margin: 0 0 10px; }
   .gray_block .heading h2 {
     margin: 20px 0 30px; }
+    .gray_block .heading h2 small {
+      color: #333; }
   .gray_block .heading span {
     background: #efefef;
     color: #333; }
@@ -544,18 +555,18 @@ footer {
   text-transform: uppercase;
   background: #006699; }
 
-.catalogue_accomodations .accomodation_container {
+.accomodation_container {
   position: relative; }
-  .catalogue_accomodations .accomodation_container .accomodation_about button {
+  .accomodation_container .accomodation_about button {
     display: block;
     position: absolute;
     left: 50%;
     top: 50%;
     margin-left: -64px;
     margin-top: -10px; }
-  .catalogue_accomodations .accomodation_container:hover .price, .catalogue_accomodations .accomodation_container:hover .placement, .catalogue_accomodations .accomodation_container:hover .bedrooms_num {
+  .accomodation_container:hover .price, .accomodation_container:hover .placement, .accomodation_container:hover .bedrooms_num {
     z-index: 0; }
-  .catalogue_accomodations .accomodation_container .price {
+  .accomodation_container .price {
     display: block;
     position: absolute;
     left: 0;
@@ -565,9 +576,9 @@ footer {
     color: #fff;
     font-size: 18px;
     z-index: 2; }
-    .catalogue_accomodations .accomodation_container .price span {
+    .accomodation_container .price span {
       font-size: 24px; }
-  .catalogue_accomodations .accomodation_container .placement, .catalogue_accomodations .accomodation_container .bedrooms_num {
+  .accomodation_container .placement, .accomodation_container .bedrooms_num {
     position: absolute;
     z-index: 2;
     background: #fff;
@@ -575,13 +586,19 @@ footer {
     color: #333;
     padding: 3px 10px;
     bottom: 50px; }
-    .catalogue_accomodations .accomodation_container .placement .fa, .catalogue_accomodations .accomodation_container .bedrooms_num .fa {
+    .accomodation_container .placement .fa, .accomodation_container .bedrooms_num .fa {
       color: #666;
       margin-right: 5px; }
-  .catalogue_accomodations .accomodation_container .bedrooms_num {
+  .accomodation_container .bedrooms_num {
     right: 4px; }
-  .catalogue_accomodations .accomodation_container .placement {
+  .accomodation_container .placement {
     right: 64px; }
+
+.accomodations_main .accomodation_about button {
+  position: static;
+  width: 130px;
+  padding: 10px;
+  margin: 20px auto 0; }
 
 .paginator {
   text-align: center;
@@ -626,3 +643,60 @@ footer {
   background-size: cover; }
   .more_about .places h4 {
     background: #3399ff; }
+
+.gray_block .accomodation_container p {
+  background: #efefef;
+  text-align: left; }
+
+.see_also {
+  padding-bottom: 40px; }
+  .see_also .heading {
+    margin-bottom: 50px; }
+  .see_also .see_more {
+    color: #069;
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-bottom: 1px dotted #069; }
+
+.services_header {
+  height: 320px; }
+
+.service_heading {
+  margin-top: 80px;
+  padding: 30px 0;
+  text-align: center;
+  color: #069;
+  background: url("../images/heading_bg_large.png") no-repeat;
+  background-position: center; }
+  .service_heading h2 {
+    width: 320px;
+    padding-top: 20px;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin: 0px auto;
+    background: url("../images/hbg1.png") no-repeat;
+    background-position: center 27px;
+    background-size: 100%;
+    font-weight: bold; }
+
+.article_block {
+  margin: 40px 0; }
+  .article_block p {
+    font-size: 18px; }
+  .article_block img {
+    margin-right: 30px;
+    margin-bottom: 10px; }
+  .article_block h2 {
+    line-height: 48px;
+    margin-bottom: 20px;
+    color: #069;
+    font-size: 48px;
+    margin-top: 0;
+    text-transform: uppercase; }
+  .article_block .button {
+    display: block;
+    width: 226px;
+    padding: 18px 0;
+    margin: 15px auto 30px;
+    text-transform: uppercase;
+    font-size: 26px; }

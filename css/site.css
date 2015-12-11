@@ -676,7 +676,7 @@ footer {
   .service_heading_short h2 {
     width: 320px;
     padding-top: 20px;
-    font-size: 42px;
+    font-size: 41px;
     text-transform: uppercase;
     margin: 0px auto;
     background: url("../images/hbg1.png") no-repeat;
@@ -716,11 +716,12 @@ footer {
     text-transform: uppercase;
     font-size: 26px; }
 
-.services_menu .accomodation_container {
-  margin: 40px 0;
-  height: 400px; }
-  .services_menu .accomodation_container img {
-    height: 400px; }
-  .services_menu .accomodation_container p {
-    text-align: center;
-    text-transform: uppercase; }
+.services_menu {
+  padding: 30px 0 50px; }
+  .services_menu .accomodation_container {
+    height: 380px; }
+    .services_menu .accomodation_container img {
+      height: 380px; }
+    .services_menu .accomodation_container p {
+      text-align: center;
+      text-transform: uppercase; }

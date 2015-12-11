@@ -3285,6 +3285,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/bike-rent.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 231909,
+		"inputAbbreviatedPath": "\/images\/bike-rent.png",
+		"outputAbbreviatedPath": "\/images\/bike-rent.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/customer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3307,6 +3318,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/excursion.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 301638,
+		"inputAbbreviatedPath": "\/images\/excursion.png",
+		"outputAbbreviatedPath": "\/images\/excursion.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/hbg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1154,
+		"inputAbbreviatedPath": "\/images\/hbg.png",
+		"outputAbbreviatedPath": "\/images\/hbg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/hbg1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3325,6 +3358,17 @@
 		"initialSize": 24598,
 		"inputAbbreviatedPath": "\/images\/heading_bg_large.png",
 		"outputAbbreviatedPath": "\/images\/heading_bg_large.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/heading_bg_short.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15491,
+		"inputAbbreviatedPath": "\/images\/heading_bg_short.png",
+		"outputAbbreviatedPath": "\/images\/heading_bg_short.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3439,6 +3483,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/shopping.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 311853,
+		"inputAbbreviatedPath": "\/images\/shopping.png",
+		"outputAbbreviatedPath": "\/images\/shopping.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/step-five.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3490,6 +3545,17 @@
 		"initialSize": 1356,
 		"inputAbbreviatedPath": "\/images\/step-two.png",
 		"outputAbbreviatedPath": "\/images\/step-two.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/transfer.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 995421,
+		"inputAbbreviatedPath": "\/images\/transfer.png",
+		"outputAbbreviatedPath": "\/images\/transfer.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3719,6 +3785,31 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/service.haml": {
+		"escapeHTMLCharacters": 0,
+		"fileType": 256,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/service.haml",
+		"noEscapeInAttributes": 0,
+		"outputAbbreviatedPath": "\/service.html",
+		"outputFormat": 2,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"useCDATA": 0,
+		"useDoubleQuotes": 0,
+		"useUnixNewlines": 0
+		},
+	"\/service.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/service.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/services.haml": {
 		"escapeHTMLCharacters": 0,

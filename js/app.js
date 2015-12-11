@@ -8,6 +8,8 @@ $("#slide-four").backstretch("images/villa.jpg");
 $("#customer_reviews").backstretch("images/review_bg.png");
 // catalogue_filter BG
 $("#catalogue_filter").backstretch("images/review_bg.png");
+// services_header BG
+$("#services_header").backstretch("images/services1.png");
 // Main Page form button
 $(".button_search_open").click(function () {
   $(".orbit_form").toggle();

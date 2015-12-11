@@ -145,8 +145,6 @@ header {
     background: #006699; }
     .orbit_form_wrapper .button_search .fa {
       margin-right: 3px; }
-    .orbit_form_wrapper .button_search:hover {
-      background: #005599; }
   .orbit_form_wrapper .button_search_open {
     display: block;
     position: absolute;
@@ -255,14 +253,14 @@ header {
     opacity: 1;
     transition: .2s; }
 
-.why_we_are {
+.gray_block {
   position: relative;
-  margin: 30px 0 15px;
+  margin: 30px 0 0px;
   padding: 30px 0;
   background: #efefef;
   text-align: center;
   color: #333; }
-  .why_we_are:after {
+  .gray_block:after {
     display: block;
     position: absolute;
     content: "";
@@ -272,15 +270,18 @@ header {
     left: 50%;
     margin-left: -33px;
     background: url("../images/why-pattern.png"); }
-  .why_we_are img {
+  .gray_block img {
     margin: 0 0 10px; }
-  .why_we_are .heading h2 {
+  .gray_block .heading h2 {
     margin: 20px 0 30px; }
-  .why_we_are .heading span {
+  .gray_block .heading span {
     background: #efefef;
     color: #333; }
-  .why_we_are h2:before {
+  .gray_block h2:before {
     background: #333; }
+
+.steps_of_work {
+  margin-top: 15px; }
 
 .steps_of_work .step {
   position: relative;
@@ -442,10 +443,15 @@ footer {
   padding: 20px 0;
   background: #333;
   color: #fff; }
+  footer h4 {
+    margin-top: 5px; }
   footer a {
     display: block;
     color: #fff;
     font-size: 18px; }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline; }
   footer .social_buttons a {
     display: inline-block;
     margin: 5px 3px 8px;
@@ -475,3 +481,148 @@ footer {
     margin: 20px; }
   footer span {
     color: #838383; }
+
+.catalogue_filter form {
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  height: 330px;
+  margin: 20px 0;
+  padding: 10px 0 0; }
+  .catalogue_filter form h3 {
+    margin: 0 15px 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #006699; }
+  .catalogue_filter form h5 {
+    color: #069; }
+  .catalogue_filter form hr {
+    margin: 5px 0 15px;
+    border-width: 3px; }
+  .catalogue_filter form .checkbox input {
+    margin-bottom: 5px; }
+  .catalogue_filter form .checkbox label {
+    margin-top: 0; }
+  .catalogue_filter form .filter,
+  .catalogue_filter form .filter .large-2 {
+    padding-left: 0;
+    padding-right: 0; }
+  .catalogue_filter form .button-crimson {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    font-size: 24px;
+    padding: 33px 0;
+    text-transform: uppercase; }
+    .catalogue_filter form .button-crimson .fa-search {
+      position: absolute;
+      display: block;
+      width: 14px;
+      height: 14px;
+      top: 38px;
+      left: 20px;
+      margin-right: 20px;
+      font-size: 14px; }
+  .catalogue_filter form label {
+    margin-top: 4px;
+    text-align: right;
+    font-size: 18px;
+    color: #999; }
+
+.catalogue_price_filter {
+  display: block;
+  float: right;
+  margin: 15px 0 20px;
+  color: #000; }
+  .catalogue_price_filter .fa {
+    margin-left: 5px; }
+
+.id_search {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+  background: #006699; }
+
+.catalogue_accomodations .accomodation_container {
+  position: relative; }
+  .catalogue_accomodations .accomodation_container .accomodation_about button {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -64px;
+    margin-top: -10px; }
+  .catalogue_accomodations .accomodation_container:hover .price, .catalogue_accomodations .accomodation_container:hover .placement, .catalogue_accomodations .accomodation_container:hover .bedrooms_num {
+    z-index: 0; }
+  .catalogue_accomodations .accomodation_container .price {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 85px;
+    padding: 3px 15px;
+    background: #cc0066;
+    color: #fff;
+    font-size: 18px;
+    z-index: 2; }
+    .catalogue_accomodations .accomodation_container .price span {
+      font-size: 24px; }
+  .catalogue_accomodations .accomodation_container .placement, .catalogue_accomodations .accomodation_container .bedrooms_num {
+    position: absolute;
+    z-index: 2;
+    background: #fff;
+    font-size: 18px;
+    color: #333;
+    padding: 3px 10px;
+    bottom: 50px; }
+    .catalogue_accomodations .accomodation_container .placement .fa, .catalogue_accomodations .accomodation_container .bedrooms_num .fa {
+      color: #666;
+      margin-right: 5px; }
+  .catalogue_accomodations .accomodation_container .bedrooms_num {
+    right: 4px; }
+  .catalogue_accomodations .accomodation_container .placement {
+    right: 64px; }
+
+.paginator {
+  text-align: center;
+  margin: 20px 0 30px; }
+  .paginator ul li {
+    border: 1px solid #e6e6e6; }
+    .paginator ul li.current {
+      border-color: #069;
+      background: #069; }
+
+.more_about a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 400px; }
+  .more_about a h4 {
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 42px;
+    background: red;
+    text-transform: uppercase; }
+.more_about .entertainment {
+  background: url("../images/entertainment.png") no-repeat;
+  background-size: cover; }
+  .more_about .entertainment h4 {
+    background: #cc0066; }
+.more_about .beaches {
+  background: url("../images/beaches.png") no-repeat;
+  background-size: cover; }
+  .more_about .beaches h4 {
+    background: #ff9900; }
+.more_about .seasons {
+  background: url("../images/seasons.png") no-repeat;
+  background-size: cover; }
+  .more_about .seasons h4 {
+    background: #006699; }
+.more_about .places {
+  background: url("../images/places.png") no-repeat;
+  background-size: cover; }
+  .more_about .places h4 {
+    background: #3399ff; }

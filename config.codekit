@@ -3188,6 +3188,31 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/catalogue.haml": {
+		"escapeHTMLCharacters": 0,
+		"fileType": 256,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/catalogue.haml",
+		"noEscapeInAttributes": 0,
+		"outputAbbreviatedPath": "\/catalogue.html",
+		"outputFormat": 2,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"useCDATA": 0,
+		"useDoubleQuotes": 0,
+		"useUnixNewlines": 0
+		},
+	"\/catalogue.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/catalogue.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/CHANGELOG.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
@@ -3249,6 +3274,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/beaches.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 205375,
+		"inputAbbreviatedPath": "\/images\/beaches.png",
+		"outputAbbreviatedPath": "\/images\/beaches.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/customer.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3256,6 +3292,17 @@
 		"initialSize": 239918,
 		"inputAbbreviatedPath": "\/images\/customer.jpg",
 		"outputAbbreviatedPath": "\/images\/customer.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/entertainment.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 181771,
+		"inputAbbreviatedPath": "\/images\/entertainment.png",
+		"outputAbbreviatedPath": "\/images\/entertainment.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3315,6 +3362,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/places.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 223996,
+		"inputAbbreviatedPath": "\/images\/places.png",
+		"outputAbbreviatedPath": "\/images\/places.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/review_bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3333,6 +3391,17 @@
 		"initialSize": 6306,
 		"inputAbbreviatedPath": "\/images\/review_pattern.png",
 		"outputAbbreviatedPath": "\/images\/review_pattern.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/seasons.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 119803,
+		"inputAbbreviatedPath": "\/images\/seasons.png",
+		"outputAbbreviatedPath": "\/images\/seasons.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title Insitevilla – Catalogue Page
+    %title Insitevilla – Object Page
     %meta{:charset => "UTF-8"}
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
@@ -13,12 +13,12 @@
   %body
     %header
       .row
-        .columns.large-3
+        .columns.large-3.small-6
           %a.agency_logo{:href => "index.html"}
             %img{:src => "images/logo.png"}
-        .columns.large-3
+        .columns.large-3.small-6
           %span.agency_description Агентство недвижимости <br> о. Пхукет
-        .columns.large-6.text-right
+        .columns.large-6.text-right.small-12
           .agency_contacts
             %span.agency_mail
               %i.fa.fa-envelope
@@ -30,7 +30,7 @@
               %a{:href => "callto:+66943511068"} +66943511068
       %section.main_menu#main_menu
         .row
-          .columns.large-12
+          .columns.large-12.small-12
             %nav
               %ul.menu
                 %li.active
@@ -45,93 +45,58 @@
                   %a{:href => "#"} Инфо
                 %li
                   %a{:href => "#"} О нас
-
-    %section.catalogue_filter.clearfix#catalogue_filter
+    %section.object_header
+      #object_header_photo
       .row
-        .columns.large-12
-          %form
-            %h3 Поиск
-            .columns.large-10.filter
-              .columns.large-4
-                .columns.large-2
-                  %label(for="right-label") Статус:
-                .columns.large-10
-                  %select
-                    %option Аренда
-              .columns.large-4
-                .columns.large-2
-                  %label(for="right-label") Район:
-                .columns.large-10
-                  %select
-                    %option Любой
-              .columns.large-4
-                .columns.large-2
-                  %label(for="right-label") Тип:
-                .columns.large-10
-                  %select
-                    %option Все типы
-              .columns.large-4
-                .columns.large-2
-                  %label(for="right-label") Спален:
-                .columns.large-10
-                  %select
-                    %option Любое количество
-              .columns.large-4
-                .columns.large-2
-                  %label(for="right-label") Ванных:
-                .columns.small-10
-                  %select
-                    %option Любое количество
-              .columns.large-4
-                .columns.large-2
-                  %label(for="right-label") До&nbsp;моря:
-                .columns.large-10
-                  %select
-                    %option Любое расстояние
-              .columns.large-12
-                %h5 Расширенный поиск
-                %hr
-                .columns.large-3
-                  %div.checkbox
-                    %input#checkbox1(type="checkbox")
-                      %label(for="checkbox1") Бассейн
-                  %div.checkbox
-                    %input#checkbox2(type="checkbox")
-                      %label(for="checkbox2") Вид на море
-                  %div.checkbox
-                    %input#checkbox3(type="checkbox")
-                      %label(for="checkbox3") Вид на горы
-                .columns.large-3
-                  %div.checkbox
-                    %input#checkbox4(type="checkbox")
-                      %label(for="checkbox4") Спортзал
-                  %div.checkbox
-                    %input#checkbox5(type="checkbox")
-                      %label(for="checkbox5") Паркинг
-                  %div.checkbox
-                    %input#checkbox6(type="checkbox")
-                      %label(for="checkbox6") Охраняемый комплекс
-                .columns.large-3.end
-                  %div.checkbox
-                    %input#checkbox7(type="checkbox")
-                      %label(for="checkbox7") Тропический сад
-                  %div.checkbox
-                    %input#checkbox8(type="checkbox")
-                      %label(for="checkbox8") Барбекю
-                  %div.checkbox
-                    %input#checkbox9(type="checkbox")
-                      %label(for="checkbox9") Повар
-            .columns.large-2
-              %button.button.button_search.button-crimson
-                %i.fa.fa-search
-                Поиск
-              %button.button.button_search.id_search Поиск по ID
+        .columns.large-8
+          %h2
+            Вилла Sunshine с видом на море
+            %small ID 012345
+          %ul.header_villa_about
+            %li.villa_type Вилла
+            %li.villa_bedrooms 3 спальни
+            %li.villa_bathroom 2 ванные
+    %section.object_about
+      .row
+        .columns.large-8.end
+          %h3 Об этом объекте
+        .columns.large-8.object_description.end
+          %h4 Описание
+          %p
+            Роскошная вилла  с великолепным видом на море расположена в уютной улочке, в пешей доступности от  магазинов, ресторанов, массажных салонов.
+          %p
+            4 спальни, 3 ванные комнаты, 2 бассейна - один на крыше, с  видом на море, другой в саду. Полностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом. . олностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом.
+          %p
+            Вилла расположена  на Равай, интерьер каждой комнаты продуман до мелочей и уникален. Есть барбекюшница. 4 спальни, 3 ванные комнаты, 2 бассейна - один на крыше, с  видом на море, другой в саду. Полностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом. . олностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом.
+          %p
+            Вилла расположена  на Равай, интерьер каждой комнаты продуман до мелочей и уникален. Есть барбекюшница.
+        .columns.large-8.object_facilities.end
+          %h4 Удобства:
+          .columns.large-4
+            %ul
+              %li Количество спален: 5
+              %li Таланг
+              %li Класс "Стандарт"
+              %li Вилла
+          .columns.large-4
+            %ul
+              %li Гостинная
+              %li Кухня
+              %li Столовая
+              %li Ванна
+          .columns.large-4
+            %ul
+              %li До пляжа Най Янг 1,5км
+              %li До аэропорта 1,5 км
+              %li Бассейн
+              %li Консьерж
+
+
     %section.catalogue_accomodations.clearfix
       .row
-        .columns.large-12
-          %button.catalogue_price_filter
-            Сортировать по цене
-            %i.fa.fa-caret-down
+        .columns.large-centered.large-5.heading
+          %h2
+            %span Смотрите также
         .columns.large-4
           .accomodation_container
             .price
@@ -180,136 +145,8 @@
             %p Вилла в горах
             %a.accomodation_about{:href => "#"}
               %button.button Подробнее
-        .columns.large-4
-          .accomodation_container
-            .price
-              от
-              %span 5&thinsp;000
-              бат
-            .placement
-              %i.fa.fa-map-marker
-              Равай
-            .bedrooms_num
-              %i.fa.fa-bed
-              5
-            %img{:src => "images/villas/villa_preview4.jpg"}
-            %p Вилла Саншайн
-            %a.accomodation_about{:href => "#"}
-              %button.button Подробнее
-        .columns.large-4
-          .accomodation_container
-            .price
-              от
-              %span 5&thinsp;000
-              бат
-            .placement
-              %i.fa.fa-map-marker
-              Равай
-            .bedrooms_num
-              %i.fa.fa-bed
-              5
-            %img{:src => "images/villas/villa_preview5.jpg"}
-            %p Дом в коттеджном поселке
-            %a.accomodation_about{:href => "#"}
-              %button.button Подробнее
-        .columns.large-4
-          .accomodation_container
-            .price
-              от
-              %span 15&thinsp;000
-              бат
-            .placement
-              %i.fa.fa-map-marker
-              Равай
-            .bedrooms_num
-              %i.fa.fa-bed
-              5
-            %img{:src => "images/villas/villa_preview1.jpg"}
-            %p Апартаменты под крышей
-            %a.accomodation_about{:href => "#"}
-              %button.button Подробнее
-        .columns.large-4
-          .accomodation_container
-            .price
-              от
-              %span 15&thinsp;000
-              бат
-            .placement
-              %i.fa.fa-map-marker
-              Равай
-            .bedrooms_num
-              %i.fa.fa-bed
-              5
-            %img{:src => "images/villas/villa_preview2.jpg"}
-            %p Вилла с видом на море
-            %a.accomodation_about{:href => "#"}
-              %button.button Подробнее
-        .columns.large-4
-          .accomodation_container
-            .price
-              от
-              %span 155&thinsp;000
-              бат
-            .placement
-              %i.fa.fa-map-marker
-              Равай
-            .bedrooms_num
-              %i.fa.fa-bed
-              5
-            %img{:src => "images/villas/villa_preview3.jpg"}
-            %p Вилла Саншайн
-            %a.accomodation_about{:href => "#"}
-              %button.button Подробнее
-        .columns.large-4.end
-          .accomodation_container
-            .price
-              от
-              %span 9&thinsp;000
-              бат
-            .placement
-              %i.fa.fa-map-marker
-              Равай
-            .bedrooms_num
-              %i.fa.fa-bed
-              5
-            %img{:src => "images/villas/villa_preview4.jpg"}
-            %p Вилла в горах
-            %a.accomodation_about{:href => "#"}
-              %button.button Подробнее
-        .columns.large-12.paginator
-          %ul.pagination(role="navigation" aria-label="Pagination")
-            %li
-              %a{:href => "#"}(aria-label="Page 1") 1
-            %li.current
-              2
-            %li
-              %a{:href => "#"}(aria-label="Page 3") 3
-            %li
-              %a{:href => "#"}(aria-label="Page 4") 4
-            %li
-              %a{:href => "#"}(aria-label="Page 5") 5
-            %li
-              %a{:href => "#"}(aria-label="Next page") >
-            %li
-              %a{:href => "#"}(aria-label="Last page") >>
 
-    %section.gray_block.more_about
-      .row
-        .columns.large-centered.large-6.heading
-          %h2
-            %span Узнайте больше о пхукете
-        .columns.large-3
-          %a.places{:href => "#"}
-            %h4 Районы
-        .columns.large-3
-          %a.seasons{:href => "#"}
-            %h4 Сезоны
-        .columns.large-3
-          %a.beaches{:href => "#"}
-            %h4 Пляжи
-        .columns.large-3
-          %a.entertainment{:href => "#"}
-            %h4 Развлечения
+
     %section.contact-form
       .row
         .columns.large-12

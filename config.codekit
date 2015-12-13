@@ -3274,6 +3274,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/bath.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 873,
+		"inputAbbreviatedPath": "\/images\/bath.png",
+		"outputAbbreviatedPath": "\/images\/bath.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/beaches.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3281,6 +3292,17 @@
 		"initialSize": 205375,
 		"inputAbbreviatedPath": "\/images\/beaches.png",
 		"outputAbbreviatedPath": "\/images\/beaches.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bedroom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 572,
+		"inputAbbreviatedPath": "\/images\/bedroom.png",
+		"outputAbbreviatedPath": "\/images\/bedroom.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3567,6 +3589,17 @@
 		"initialSize": 296598,
 		"inputAbbreviatedPath": "\/images\/villa.jpg",
 		"outputAbbreviatedPath": "\/images\/villa.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/villa.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1010,
+		"inputAbbreviatedPath": "\/images\/villa.png",
+		"outputAbbreviatedPath": "\/images\/villa.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

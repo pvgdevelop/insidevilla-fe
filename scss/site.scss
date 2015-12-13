@@ -849,3 +849,86 @@ footer{
     }
   }
 }
+.object_header{
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 30px;
+  #object_header_photo{
+    height: 500px;
+  }
+  h2{
+    color: #333;
+    margin: 20px 0;
+    font-size: 42px;
+    text-transform: uppercase;
+    small{
+      display: block;
+      margin-top: 10px;
+      font-size: 22px;
+      color: #999;
+    }
+  }
+  .header_villa_about{
+    margin: 40px 0 10px;
+    color: #999;
+    font-size: 18px;
+    li{
+      padding-left: 40px;
+      margin-right: 50px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      background-position: left bottom;
+      &.villa_type{
+        background-image: url('../images/villa.png');
+      }
+      &.villa_bedrooms{
+        background-image: url('../images/bedroom.png');
+      }
+      &.villa_bathroom{
+        background-image: url('../images/bath.png');
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+.object_about{
+  padding: 20px 0;
+  h3{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #069;
+    margin: 10px 0 25px;
+  }
+  h4{
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 18px;
+  }
+}
+.object_facilities{
+  font-weight: bold;
+  padding: 20px;
+  margin: 5px 15px;
+  border: 1px solid #eee;
+  .large-4{
+    padding: 0;
+  }
+  ul{
+    color: #666;
+    font-size: 18px;
+    margin: 0;
+    list-style: none;
+    li{
+      margin-bottom: 5px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

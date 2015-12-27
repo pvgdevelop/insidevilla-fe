@@ -877,3 +877,23 @@ footer {
 .google_map {
   height: 400px;
   width: 100%; }
+
+#object_booking_form {
+  width: 360px;
+  height: 200px;
+  background: red;
+  z-index: 9999; }
+
+.sticky {
+  position: fixed;
+  width: 360px;
+  height: 200px;
+  background: red;
+  z-index: 101; }
+
+.stop {
+  width: 360px;
+  height: 200px;
+  background: red;
+  position: relative;
+  z-index: 101; }

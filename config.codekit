@@ -3428,6 +3428,138 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/icons\/obj_aero.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 869,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_aero.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_aero.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_bath.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 781,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_bath.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_bath.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_beach.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1200,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_beach.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_beach.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_bednum.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 753,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_bednum.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_bednum.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_canteen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1161,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_canteen.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_canteen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_class.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 506,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_class.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_class.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_concierge.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 828,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_concierge.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_concierge.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_kitchen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 360,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_kitchen.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_kitchen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_location.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 744,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_location.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_location.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_lroom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 316,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_lroom.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_lroom.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_pool.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1085,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_pool.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_pool.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icons\/obj_type.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 710,
+		"inputAbbreviatedPath": "\/images\/icons\/obj_type.png",
+		"outputAbbreviatedPath": "\/images\/icons\/obj_type.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,

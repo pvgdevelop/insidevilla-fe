@@ -919,6 +919,15 @@ footer{
   .large-4{
     padding: 0;
   }
+  h4{
+    margin-bottom: 15px;
+  }
+  .show_all{
+    text-decoration: underline;
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #006699
+  }
   ul{
     color: #666;
     font-size: 18px;
@@ -926,9 +935,109 @@ footer{
     list-style: none;
     li{
       margin-bottom: 5px;
+      padding-left: 33px;
+      &.obj_bednum{
+        background: url('../images/icons/obj_bednum.png') no-repeat center left;
+        background-size: 22px
+      }
+      &.obj_location{
+        background: url('../images/icons/obj_location.png') no-repeat 4px center;
+        background-size: 14px
+      }
+      &.obj_class{
+        background: url('../images/icons/obj_class.png') no-repeat 6px center;
+        background-size: 10px
+      }
+      &.obj_type{
+        background: url('../images/icons/obj_type.png') no-repeat center left;
+        background-size: 22px
+      }
+      &.obj_lroom{
+        background: url('../images/icons/obj_lroom.png') no-repeat center left;
+        background-size: 22px
+      }
+      &.obj_kitchen{
+        background: url('../images/icons/obj_kitchen.png') no-repeat center left;
+        background-size: 22px
+      }
+      &.obj_canteen{
+        background: url('../images/icons/obj_canteen.png') no-repeat center left;
+        background-size: 22px
+      }
+      &.obj_bath{
+        background: url('../images/icons/obj_bath.png') no-repeat center left;
+        background-size: 22px
+      }
+      &.obj_beach{
+        background: url('../images/icons/obj_beach.png') no-repeat center left;
+        background-size: 25px
+      }
+      &.obj_aero{
+        background: url('../images/icons/obj_aero.png') no-repeat center left;
+        background-size: 20px
+      }
+      &.obj_pool{
+        background: url('../images/icons/obj_pool.png') no-repeat center left;
+        background-size: 20px
+      }
+      &.obj_concierge{
+        background: url('../images/icons/obj_concierge.png') no-repeat 2px center;
+        background-size: 18px
+      }
       &:last-child{
         margin-bottom: 0;
       }
     }
   }
+}
+.object_pricing{
+  margin-top: 15px;
+  .table_pricing{
+    width: 100%;
+    margin: 5px 0 0 30px;
+    text-align: center;
+    tr{
+      background: none;
+      border: 1px solid #ccc;
+    }
+    td{
+      border: 1px solid #ccc;
+    }
+  }
+}
+.object_reviews{
+  padding: 25px 0;
+  margin: 20px 0;
+  background: #efefef;
+  h4{
+    margin: 0 15px;
+    color: #333;
+  }
+  .review_block{
+    background: #fff;
+    margin: 25px 0 0;
+    padding: 25px;
+    color: #333;
+    font-size: 18px;
+    p{
+      margin: 5px 0
+    }
+  }
+  .give_review{
+    text-align: center;
+    margin-top: 30px;
+    a{
+      text-decoration: underline;
+      font-size: 18px;
+    }
+  }
+}
+.object_map{
+  h4{
+    margin: 0 0 20px
+  }
+}
+.google_map{
+  height: 400px;
+  width: 100%;
 }

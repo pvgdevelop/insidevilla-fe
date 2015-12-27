@@ -47,6 +47,13 @@
                   %a{:href => "#"} О нас
     %section.object_header
       #object_header_photo
+        .row
+          .columns.large-8
+          .columns.large-4
+            .object_header_price
+              Цена от
+              %span 35 000
+              бат/месяц
       .row
         .columns.large-8
           %h2
@@ -58,6 +65,19 @@
             %li.villa_bathroom 2 ванные
         .columns.large-4
           .object_booking_form#object_booking_form
+            .object_price
+              Цена от
+              %span 35 000
+              бат/месяц
+            %form
+              .columns.large-6
+                %span Въезд
+                %input{:type=>"text", :placeholder=>"Дата"}
+              .columns.large-6
+                %span Выезд
+                %input{:type=>"text", :placeholder=>"Дата"}
+              .columns.large-12
+                %a.button{:href => "#"} Запросите бронирование
     %section.object_about
       .row
         .columns.large-8

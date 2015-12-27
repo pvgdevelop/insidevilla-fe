@@ -730,7 +730,21 @@ footer {
   border-bottom: 2px solid #ccc;
   padding-bottom: 30px; }
   .object_header #object_header_photo {
+    position: relative;
     height: 500px; }
+    .object_header #object_header_photo .object_header_price {
+      position: absolute;
+      bottom: 0;
+      width: 360px;
+      height: 79px;
+      padding: 10px 0;
+      background: #eee;
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+      background: #c06; }
+      .object_header #object_header_photo .object_header_price span {
+        font-size: 36px; }
   .object_header h2 {
     color: #333;
     margin: 20px 0;
@@ -879,21 +893,41 @@ footer {
   width: 100%; }
 
 #object_booking_form {
+  margin-top: -80px; }
+
+#object_booking_form,
+.sticky, .stop {
   width: 360px;
-  height: 200px;
-  background: red;
-  z-index: 9999; }
+  padding: 0 0 10px;
+  height: 245px;
+  background: #e8e8e8;
+  font-size: 18px;
+  z-index: 101; }
+  #object_booking_form span,
+  .sticky span, .stop span {
+    display: block;
+    margin-bottom: 10px; }
+  #object_booking_form .object_price,
+  .sticky .object_price, .stop .object_price {
+    padding: 10px 0 5px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background: #c06;
+    margin-bottom: 10px; }
+    #object_booking_form .object_price span,
+    .sticky .object_price span, .stop .object_price span {
+      font-size: 36px;
+      display: inline-block; }
+  #object_booking_form .button,
+  .sticky .button, .stop .button {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    text-transform: uppercase; }
 
 .sticky {
-  position: fixed;
-  width: 360px;
-  height: 200px;
-  background: red;
-  z-index: 101; }
+  position: fixed; }
 
 .stop {
-  width: 360px;
-  height: 200px;
-  background: red;
-  position: relative;
-  z-index: 101; }
+  position: relative; }

@@ -106,6 +106,10 @@ header{
       padding: 0;
       background: none;
     }
+    &.active a{
+      color: #cc0066;
+      text-decoration: underline;
+    }
   }
 }
 .orbit_slider .orbit{
@@ -775,7 +779,8 @@ footer{
 .services_header{
   height: 320px;
 }
-.service_heading{
+.service_heading,
+.service_heading_short{
   margin-top: 80px;
   padding: 30px 0;
   text-align: center;
@@ -785,13 +790,24 @@ footer{
   h2{
     width: 320px;
     padding-top: 20px;
-    font-size: 42px;
+    font-size: 41px;
     text-transform: uppercase;
     margin: 0px auto;
     background: url('../images/hbg1.png') no-repeat;
     background-position: center 27px;
     background-size: 100%;
     font-weight: bold;
+  }
+}
+.service_heading_short{
+  background: url('../images/heading_bg_short.png') no-repeat;
+  background-position: center;
+  h2{
+    width: 200px;
+    font-size: 48px;
+    background: url('../images/hbg.png') no-repeat;
+    background-position: center 27px;
+    background-size: 140px;
   }
 }
 .article_block{
@@ -818,5 +834,101 @@ footer{
     margin: 15px auto 30px;
     text-transform: uppercase;
     font-size: 26px;
+  }
+}
+.services_menu{
+  padding: 30px 0 50px;
+  .accomodation_container{
+    height: 380px;
+    img{
+      height: 380px;
+    }
+    p{
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+.object_header{
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 30px;
+  #object_header_photo{
+    height: 500px;
+  }
+  h2{
+    color: #333;
+    margin: 20px 0;
+    font-size: 42px;
+    text-transform: uppercase;
+    small{
+      display: block;
+      margin-top: 10px;
+      font-size: 22px;
+      color: #999;
+    }
+  }
+  .header_villa_about{
+    margin: 40px 0 10px;
+    color: #999;
+    font-size: 18px;
+    li{
+      padding-left: 40px;
+      margin-right: 50px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      background-position: left bottom;
+      &.villa_type{
+        background-image: url('../images/villa.png');
+      }
+      &.villa_bedrooms{
+        background-image: url('../images/bedroom.png');
+      }
+      &.villa_bathroom{
+        background-image: url('../images/bath.png');
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+.object_about{
+  padding: 20px 0;
+  h3{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #069;
+    margin: 10px 0 25px;
+  }
+  h4{
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 18px;
+  }
+}
+.object_facilities{
+  font-weight: bold;
+  padding: 20px;
+  margin: 5px 15px;
+  border: 1px solid #eee;
+  .large-4{
+    padding: 0;
+  }
+  ul{
+    color: #666;
+    font-size: 18px;
+    margin: 0;
+    list-style: none;
+    li{
+      margin-bottom: 5px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
   }
 }

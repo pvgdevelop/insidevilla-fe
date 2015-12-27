@@ -88,6 +88,9 @@ header {
   .menu li:first-child {
     padding: 0;
     background: none; }
+  .menu li.active a {
+    color: #cc0066;
+    text-decoration: underline; }
 
 .orbit_slider .orbit {
   margin: 0; }
@@ -661,23 +664,35 @@ footer {
 .services_header {
   height: 320px; }
 
-.service_heading {
+.service_heading,
+.service_heading_short {
   margin-top: 80px;
   padding: 30px 0;
   text-align: center;
   color: #069;
   background: url("../images/heading_bg_large.png") no-repeat;
   background-position: center; }
-  .service_heading h2 {
+  .service_heading h2,
+  .service_heading_short h2 {
     width: 320px;
     padding-top: 20px;
-    font-size: 42px;
+    font-size: 41px;
     text-transform: uppercase;
     margin: 0px auto;
     background: url("../images/hbg1.png") no-repeat;
     background-position: center 27px;
     background-size: 100%;
     font-weight: bold; }
+
+.service_heading_short {
+  background: url("../images/heading_bg_short.png") no-repeat;
+  background-position: center; }
+  .service_heading_short h2 {
+    width: 200px;
+    font-size: 48px;
+    background: url("../images/hbg.png") no-repeat;
+    background-position: center 27px;
+    background-size: 140px; }
 
 .article_block {
   margin: 40px 0; }
@@ -700,3 +715,80 @@ footer {
     margin: 15px auto 30px;
     text-transform: uppercase;
     font-size: 26px; }
+
+.services_menu {
+  padding: 30px 0 50px; }
+  .services_menu .accomodation_container {
+    height: 380px; }
+    .services_menu .accomodation_container img {
+      height: 380px; }
+    .services_menu .accomodation_container p {
+      text-align: center;
+      text-transform: uppercase; }
+
+.object_header {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 30px; }
+  .object_header #object_header_photo {
+    height: 500px; }
+  .object_header h2 {
+    color: #333;
+    margin: 20px 0;
+    font-size: 42px;
+    text-transform: uppercase; }
+    .object_header h2 small {
+      display: block;
+      margin-top: 10px;
+      font-size: 22px;
+      color: #999; }
+  .object_header .header_villa_about {
+    margin: 40px 0 10px;
+    color: #999;
+    font-size: 18px; }
+    .object_header .header_villa_about li {
+      padding-left: 40px;
+      margin-right: 50px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      background-position: left bottom; }
+      .object_header .header_villa_about li.villa_type {
+        background-image: url("../images/villa.png"); }
+      .object_header .header_villa_about li.villa_bedrooms {
+        background-image: url("../images/bedroom.png"); }
+      .object_header .header_villa_about li.villa_bathroom {
+        background-image: url("../images/bath.png"); }
+      .object_header .header_villa_about li:last-child {
+        margin-right: 0; }
+
+.object_about {
+  padding: 20px 0; }
+  .object_about h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #069;
+    margin: 10px 0 25px; }
+  .object_about h4 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+    text-transform: uppercase; }
+  .object_about p {
+    font-size: 18px; }
+
+.object_facilities {
+  font-weight: bold;
+  padding: 20px;
+  margin: 5px 15px;
+  border: 1px solid #eee; }
+  .object_facilities .large-4 {
+    padding: 0; }
+  .object_facilities ul {
+    color: #666;
+    font-size: 18px;
+    margin: 0;
+    list-style: none; }
+    .object_facilities ul li {
+      margin-bottom: 5px; }
+      .object_facilities ul li:last-child {
+        margin-bottom: 0; }

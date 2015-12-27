@@ -5,18 +5,20 @@
     %meta{:charset => "UTF-8"}
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/app.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/site.css", :media => "screen", :rel => "stylesheet"}
   %body
     %header
       .row
-        .columns.large-3
+        .columns.large-3.small-6
           %a.agency_logo{:href => "index.html"}
             %img{:src => "images/logo.png"}
-        .columns.large-3
+        .columns.large-3.small-6
           %span.agency_description Агентство недвижимости <br> о. Пхукет
-        .columns.large-6.text-right
+        .columns.large-6.text-right.small-12
           .agency_contacts
             %span.agency_mail
               %i.fa.fa-envelope
@@ -26,9 +28,9 @@
               %a{:href => "callto:+66947769961"} +66947769961
               , WhatsApp
               %a{:href => "callto:+66943511068"} +66943511068
-      %section.main_menu
+      %section.main_menu#main_menu
         .row
-          .columns.large-12
+          .columns.large-12.small-12
             %nav
               %ul.menu
                 %li

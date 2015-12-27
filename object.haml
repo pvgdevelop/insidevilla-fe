@@ -8,8 +8,8 @@
     %meta(http-equiv="X-UA-Compatible" content="IE=edge")
     %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :media => "screen", :rel => "stylesheet"}
+    %link{:href => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/flick/jquery-ui.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/app.css", :media => "screen", :rel => "stylesheet"}
-    %link{:href => "css/foundation-datepicker.min.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/site.css", :media => "screen", :rel => "stylesheet"}
   %body
     %header
@@ -73,10 +73,10 @@
             %form.fdatepicker
               .columns.large-6
                 %span Въезд
-                %input#dp1{:type=>"date", :placeholder=>"Дата"}
+                %input.datepicker#from{:type=>"text", :placeholder=>"Дата", " data-toggle"=>"datepicker"}
               .columns.large-6
                 %span Выезд
-                %input#dp2{:type=>"date", :placeholder=>"Дата"}
+                %input.datepicker#to{:type=>"text", :placeholder=>"Дата"}
               .columns.large-12
                 %a.button{:href => "#"} Запросите бронирование
     %section.object_about
@@ -337,10 +337,10 @@
 
 
     %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js")
+    %script(src="http://code.jquery.com/ui/1.11.4/jquery-ui.js")
     %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js")
     %script(src="http://maps.googleapis.com/maps/api/js?sensor=false")
     %script(src="js/foundation.js")
-    %script(src="js/foundation-datepicker.min.js")
     %script(src="js/app.js")
     :javascript
       var position = [7.736281, 98.777354];

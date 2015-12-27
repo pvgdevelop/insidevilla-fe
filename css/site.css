@@ -932,20 +932,22 @@ footer {
 .stop {
   position: relative; }
 
-  .my-gallery {
-    width: 100%;
-    float: left;
-  }
-  .my-gallery img {
-    width: 100%;
-    height: auto;
-  }
-  .my-gallery figure {
-    display: block;
-    float: left;
-    margin: 0 5px 5px 0;
-    width: 150px;
-  }
-  .my-gallery figcaption {
-    display: none;
-  }
+.my-gallery {
+  width: 100%;
+  height: 140px; }
+
+.my-gallery img {
+  width: 100%;
+  height: 120px; }
+
+.my-gallery figure {
+  display: block;
+  float: left;
+  width: 24%;
+  margin: 0;
+  margin-right: 1%;
+  margin-bottom: 26px;
+  height: 100px; }
+
+.my-gallery figcaption {
+  display: none; }

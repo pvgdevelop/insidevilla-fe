@@ -22,6 +22,9 @@ $(".catalogue_price_filter").click(function () {
   $(".fa-caret-down").toggleClass("fa-caret-up");
 });
 
+$('.fdatepicker').fdatepicker({
+});
+
 (function(){
 var a = document.querySelector('#object_booking_form'), b = null, P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
 window.addEventListener('scroll', Ascroll, false);

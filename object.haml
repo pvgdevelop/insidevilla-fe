@@ -9,6 +9,7 @@
     %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/app.css", :media => "screen", :rel => "stylesheet"}
+    %link{:href => "css/foundation-datepicker.min.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/site.css", :media => "screen", :rel => "stylesheet"}
   %body
     %header
@@ -69,13 +70,13 @@
               Цена от
               %span 35 000
               бат/месяц
-            %form
+            %form.fdatepicker
               .columns.large-6
                 %span Въезд
-                %input{:type=>"text", :placeholder=>"Дата"}
+                %input#dp1{:type=>"date", :placeholder=>"Дата"}
               .columns.large-6
                 %span Выезд
-                %input{:type=>"text", :placeholder=>"Дата"}
+                %input#dp2{:type=>"date", :placeholder=>"Дата"}
               .columns.large-12
                 %a.button{:href => "#"} Запросите бронирование
     %section.object_about
@@ -339,6 +340,7 @@
     %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js")
     %script(src="http://maps.googleapis.com/maps/api/js?sensor=false")
     %script(src="js/foundation.js")
+    %script(src="js/foundation-datepicker.min.js")
     %script(src="js/app.js")
     :javascript
       var position = [7.736281, 98.777354];

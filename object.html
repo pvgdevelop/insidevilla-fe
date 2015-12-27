@@ -9,6 +9,7 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' media='screen' rel='stylesheet'>
     <link href='css/app.css' media='screen' rel='stylesheet'>
+    <link href='css/foundation-datepicker.min.css' media='screen' rel='stylesheet'>
     <link href='css/site.css' media='screen' rel='stylesheet'>
   </head>
   <body>
@@ -98,14 +99,14 @@
               <span>35 000</span>
               бат/месяц
             </div>
-            <form>
+            <form class='fdatepicker'>
               <div class='columns large-6'>
                 <span>Въезд</span>
-                <input placeholder='Дата' type='text'>
+                <input id='dp1' placeholder='Дата' type='date'>
               </div>
               <div class='columns large-6'>
                 <span>Выезд</span>
-                <input placeholder='Дата' type='text'>
+                <input id='dp2' placeholder='Дата' type='date'>
               </div>
               <div class='columns large-12'>
                 <a class='button' href='#'>Запросите бронирование</a>
@@ -479,6 +480,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
     <script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
     <script src='js/foundation.js'></script>
+    <script src='js/foundation-datepicker.min.js'></script>
     <script src='js/app.js'></script>
     <script>
       var position = [7.736281, 98.777354];

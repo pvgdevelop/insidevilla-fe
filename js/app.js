@@ -21,9 +21,13 @@ $(".button_search_open").click(function () {
 $(".catalogue_price_filter").click(function () {
   $(".fa-caret-down").toggleClass("fa-caret-up");
 });
-$(".show_all").click(function () {
-  $(".object_facilities_others").toggle();
-  $(".show_all").toggle();
+/* Object Facilities open
+$(".advanced_search_open").click(function () {
+  $(".advanced_search").toggle();
+}); */
+// Adv Search Open
+$(".catalogue_price_filter").click(function () {
+  $(".fa-caret-down").toggleClass("fa-caret-up");
 });
 
 $(function() {

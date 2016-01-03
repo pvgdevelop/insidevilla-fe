@@ -27,7 +27,9 @@
     font-style: normal;
     font-weight: normal;
 }
-
+*:focus{
+  outline: none;
+}
 $open-sans-light: "OpenSansCondensedLight";
 body, h1, h2, h3, h4, h5, h6, p, article{
   font-family: $open-sans-light;
@@ -345,6 +347,14 @@ header{
   h2:before{
     background: #333;
   }
+}
+.why_we_are{
+  span{
+    font-size: 20px;
+  }
+}
+.orbit:focus{
+  outline: 0;
 }
 .steps_of_work{margin-top: 15px;}
 .steps_of_work .step{

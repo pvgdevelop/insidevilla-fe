@@ -18,6 +18,9 @@
   src: url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"), url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
+*:focus {
+  outline: none; }
+
 body, h1, h2, h3, h4, h5, h6, p, article {
   font-family: "OpenSansCondensedLight"; }
 
@@ -293,6 +296,12 @@ header {
     color: #333; }
   .gray_block h2:before {
     background: #333; }
+
+.why_we_are span {
+  font-size: 20px; }
+
+.orbit:focus {
+  outline: 0; }
 
 .steps_of_work {
   margin-top: 15px; }

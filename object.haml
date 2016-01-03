@@ -76,7 +76,7 @@
                 %span Выезд
                 %input.datepicker#to{:type=>"text", :placeholder=>"Дата"}
               .columns.large-12
-                %a.button{:href => "#"} Запросите бронирование
+                %a.button{"data-toggle"=>"animatedModal1"} Запросите бронирование
     %section.object_about
       .row
         .columns.large-8
@@ -101,9 +101,26 @@
                   %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg"}/
                 %figcaption{:itemprop => "caption description"} Image caption 4
               %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "1024x1024", :href => "https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption  5
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "964x1024", :href => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption 5
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "1024x683", :href => "https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption 7
+              %figure.last_visible{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
                 %a{"data-size" => "1024x768", :href => "https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg", :itemprop => "contentUrl"}
                   %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg"}/
-                %figcaption{:itemprop => "caption description"} Image caption 4
+                  .last_visible_see_all Посмотреть все
+                %figcaption{:itemprop => "caption description"} Image caption 8
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject", :style=>"display:none;"}
+                %a{"data-size" => "964x1024", :href => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption 9
 
           .columns.large-12.object_description.end
             %h4 Описание
@@ -135,8 +152,27 @@
                 %li.obj_aero До аэропорта 1,5 км
                 %li.obj_pool Бассейн
                 %li.obj_concierge Консьерж
-              .text-right.show_all
-                %a{:href => "#"} Показать все
+            .object_facilities_others{:style=>"display:none;"}
+              .columns.large-4
+                %ul
+                  %li.obj_bednum Количество спален: 5
+                  %li.obj_location Таланг
+                  %li.obj_class Класс "Стандарт"
+                  %li.obj_type Вилла
+              .columns.large-4
+                %ul
+                  %li.obj_lroom Гостинная
+                  %li.obj_kitchen Кухня
+                  %li.obj_canteen Столовая
+                  %li.obj_bath Ванна
+              .columns.large-4
+                %ul
+                  %li.obj_beach До пляжа Най Янг 1,5км
+                  %li.obj_aero До аэропорта 1,5 км
+                  %li.obj_pool Бассейн
+                  %li.obj_concierge Консьерж
+            .text-right.show_all
+              %a{:href => "javascript://"} Показать все
           .columns.large-2.object_pricing
             %h4
               Цена,
@@ -391,6 +427,15 @@
           .pswp__caption
             .pswp__caption__center
 
+
+    // Modal Window
+    #animatedModal1.reveal{"data-animation-in" => "fade-in", "data-animation-out" => "fade-out", "data-close-on-click" => "true", "data-reveal" => ""}
+      %h3 Заявка на бронирование
+      // Сюда вставляем любую форму
+      %button.close-button{"aria-label" => "Close reveal", "data-close" => "", :type => "button"}
+        %span{"aria-hidden" => "true"} &times;
+
+
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/flick/jquery-ui.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/photoswipe.css", :media => "screen", :rel => "stylesheet"}
@@ -419,7 +464,6 @@
               navigationControl: false,
               mapTypeControl: false,
               scaleControl: false,
-              draggable: false,
           };
 
           var villa_map = {

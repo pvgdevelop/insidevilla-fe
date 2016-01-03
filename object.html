@@ -107,7 +107,7 @@
                 <input class='datepicker' id='to' placeholder='Дата' type='text'>
               </div>
               <div class='columns large-12'>
-                <a class='button' href='#'>Запросите бронирование</a>
+                <a class='button' data-toggle='animatedModal1'>Запросите бронирование</a>
               </div>
             </form>
           </div>
@@ -147,10 +147,35 @@
                 <figcaption itemprop='caption description'>Image caption 4</figcaption>
               </figure>
               <figure itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject'>
+                <a data-size='1024x1024' href='https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg' itemprop='contentUrl'>
+                  <img alt='Image description' itemprop='thumbnail' src='https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg'>
+                </a>
+                <figcaption itemprop='caption description'>Image caption  5</figcaption>
+              </figure>
+              <figure itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject'>
+                <a data-size='964x1024' href='https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg' itemprop='contentUrl'>
+                  <img alt='Image description' itemprop='thumbnail' src='https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg'>
+                </a>
+                <figcaption itemprop='caption description'>Image caption 5</figcaption>
+              </figure>
+              <figure itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject'>
+                <a data-size='1024x683' href='https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg' itemprop='contentUrl'>
+                  <img alt='Image description' itemprop='thumbnail' src='https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg'>
+                </a>
+                <figcaption itemprop='caption description'>Image caption 7</figcaption>
+              </figure>
+              <figure class='last_visible' itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject'>
                 <a data-size='1024x768' href='https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg' itemprop='contentUrl'>
                   <img alt='Image description' itemprop='thumbnail' src='https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg'>
+                  <div class='last_visible_see_all'>Посмотреть все</div>
                 </a>
-                <figcaption itemprop='caption description'>Image caption 4</figcaption>
+                <figcaption itemprop='caption description'>Image caption 8</figcaption>
+              </figure>
+              <figure itemprop='associatedMedia' itemscope='' itemtype='http://schema.org/ImageObject' style='display:none;'>
+                <a data-size='964x1024' href='https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg' itemprop='contentUrl'>
+                  <img alt='Image description' itemprop='thumbnail' src='https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg'>
+                </a>
+                <figcaption itemprop='caption description'>Image caption 9</figcaption>
               </figure>
             </div>
           </div>
@@ -194,9 +219,35 @@
                 <li class='obj_pool'>Бассейн</li>
                 <li class='obj_concierge'>Консьерж</li>
               </ul>
-              <div class='text-right show_all'>
-                <a href='#'>Показать все</a>
+            </div>
+            <div class='object_facilities_others' style='display:none;'>
+              <div class='columns large-4'>
+                <ul>
+                  <li class='obj_bednum'>Количество спален: 5</li>
+                  <li class='obj_location'>Таланг</li>
+                  <li class='obj_class'>Класс "Стандарт"</li>
+                  <li class='obj_type'>Вилла</li>
+                </ul>
               </div>
+              <div class='columns large-4'>
+                <ul>
+                  <li class='obj_lroom'>Гостинная</li>
+                  <li class='obj_kitchen'>Кухня</li>
+                  <li class='obj_canteen'>Столовая</li>
+                  <li class='obj_bath'>Ванна</li>
+                </ul>
+              </div>
+              <div class='columns large-4'>
+                <ul>
+                  <li class='obj_beach'>До пляжа Най Янг 1,5км</li>
+                  <li class='obj_aero'>До аэропорта 1,5 км</li>
+                  <li class='obj_pool'>Бассейн</li>
+                  <li class='obj_concierge'>Консьерж</li>
+                </ul>
+              </div>
+            </div>
+            <div class='text-right show_all'>
+              <a href='javascript://'>Показать все</a>
             </div>
           </div>
           <div class='columns large-2 object_pricing'>
@@ -554,6 +605,14 @@
         </div>
       </div>
     </div>
+    <!-- / Modal Window -->
+    <div class='reveal' data-animation-in='fade-in' data-animation-out='fade-out' data-close-on-click='true' data-reveal='' id='animatedModal1'>
+      <h3>Заявка на бронирование</h3>
+      <!-- / Сюда вставляем любую форму -->
+      <button aria-label='Close reveal' class='close-button' data-close='' type='button'>
+        <span aria-hidden='true'>&times;</span>
+      </button>
+    </div>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' media='screen' rel='stylesheet'>
     <link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/flick/jquery-ui.css' media='screen' rel='stylesheet'>
     <link href='css/photoswipe.css' media='screen' rel='stylesheet'>
@@ -582,7 +641,6 @@
               navigationControl: false,
               mapTypeControl: false,
               scaleControl: false,
-              draggable: false,
           };
       
           var villa_map = {

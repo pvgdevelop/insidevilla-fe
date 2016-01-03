@@ -21,6 +21,10 @@ $(".button_search_open").click(function () {
 $(".catalogue_price_filter").click(function () {
   $(".fa-caret-down").toggleClass("fa-caret-up");
 });
+$(".show_all").click(function () {
+  $(".object_facilities_others").toggle();
+  $(".show_all").toggle();
+});
 
 $(function() {
     $( "#from" ).datepicker({

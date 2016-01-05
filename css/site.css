@@ -1062,6 +1062,7 @@ select, input {
     padding-left: 0;
     background: none; }
     .menu li a {
+      font-size: 14px;
       padding-left: 13px;
       padding-right: 13px; }
 

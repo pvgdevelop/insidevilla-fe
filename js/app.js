@@ -21,10 +21,11 @@ $(".button_search_open").click(function () {
 $(".catalogue_price_filter").click(function () {
   $(".fa-caret-down").toggleClass("fa-caret-up");
 });
-/* Object Facilities open
-$(".advanced_search_open").click(function () {
-  $(".advanced_search").toggle();
-}); */
+// Object Facilities open
+$(".show_all").click(function () {
+  $(".object_facilities_others").toggle();
+  $(".show_all > a").toggle();
+});
 // Adv Search Open
 $(".catalogue_price_filter").click(function () {
   $(".fa-caret-down").toggleClass("fa-caret-up");

@@ -79,6 +79,7 @@ header{
   }
 }
 .main_menu{
+  max-width: 100%;
   margin: 25px 0 0;
   padding: 5px 0;
   background: #efefef;
@@ -100,6 +101,7 @@ header{
   }
 }
 .menu{
+  max-width: 100%;
   li{
     padding-left: 20px;
     background: url(../images/menu_symbol.png) no-repeat;

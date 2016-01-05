@@ -66,6 +66,7 @@ header {
     font-weight: bold; }
 
 .main_menu {
+  max-width: 100%;
   margin: 25px 0 0;
   padding: 5px 0;
   background: #efefef;
@@ -84,16 +85,18 @@ header {
       text-decoration: underline;
       transition: .1s; }
 
-.menu li {
-  padding-left: 20px;
-  background: url(../images/menu_symbol.png) no-repeat;
-  background-position: center left; }
-  .menu li:first-child {
-    padding: 0;
-    background: none; }
-  .menu li.active a {
-    color: #cc0066;
-    text-decoration: underline; }
+.menu {
+  max-width: 100%; }
+  .menu li {
+    padding-left: 20px;
+    background: url(../images/menu_symbol.png) no-repeat;
+    background-position: center left; }
+    .menu li:first-child {
+      padding: 0;
+      background: none; }
+    .menu li.active a {
+      color: #cc0066;
+      text-decoration: underline; }
 
 .orbit_slider .orbit {
   margin: 0; }

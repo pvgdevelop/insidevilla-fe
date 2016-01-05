@@ -18,6 +18,9 @@
   src: url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"), url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
+body {
+  overflow: hidden; }
+
 *:focus {
   outline: none; }
 

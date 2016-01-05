@@ -7,11 +7,10 @@
     %meta{:content => "", :name => "author"}
     %meta(http-equiv="X-UA-Compatible" content="IE=edge")
     %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
-    %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/app.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/site.css", :media => "screen", :rel => "stylesheet"}
   %body
-    %header
+    %%header
       .row
         .columns.large-3.small-6
           %a.agency_logo{:href => "index.html"}
@@ -44,9 +43,16 @@
                 %li
                   %a{:href => "#"} Инфо
                 %li
-                  %a{:href => "#"} О нас
+                  %a{:href => "#"} О&nbsp;нас
     %section.object_header
       #object_header_photo
+        .row
+          .columns.large-8
+          .columns.large-4
+            .object_header_price
+              Цена от
+              %span 35 000
+              бат/месяц
       .row
         .columns.large-8
           %h2
@@ -56,40 +62,217 @@
             %li.villa_type Вилла
             %li.villa_bedrooms 3 спальни
             %li.villa_bathroom 2 ванные
+        .columns.large-4
+          .object_booking_form#object_booking_form
+            .object_price
+              Цена от
+              %span 35 000
+              бат/месяц
+            %form.fdatepicker
+              .columns.large-6
+                %span Заезд
+                %input.datepicker#from{:type=>"text", :placeholder=>"Дата", " data-toggle"=>"datepicker"}
+              .columns.large-6
+                %span Выезд
+                %input.datepicker#to{:type=>"text", :placeholder=>"Дата"}
+              .columns.large-12
+                %a.button{"data-toggle"=>"animatedModal1"} Запросите бронирование
     %section.object_about
       .row
-        .columns.large-8.end
-          %h3 Об этом объекте
-        .columns.large-8.object_description.end
-          %h4 Описание
-          %p
-            Роскошная вилла  с великолепным видом на море расположена в уютной улочке, в пешей доступности от  магазинов, ресторанов, массажных салонов.
-          %p
-            4 спальни, 3 ванные комнаты, 2 бассейна - один на крыше, с  видом на море, другой в саду. Полностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом. . олностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом.
-          %p
-            Вилла расположена  на Равай, интерьер каждой комнаты продуман до мелочей и уникален. Есть барбекюшница. 4 спальни, 3 ванные комнаты, 2 бассейна - один на крыше, с  видом на море, другой в саду. Полностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом. . олностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом.
-          %p
-            Вилла расположена  на Равай, интерьер каждой комнаты продуман до мелочей и уникален. Есть барбекюшница.
-        .columns.large-8.object_facilities.end
-          %h4 Удобства:
-          .columns.large-4
-            %ul
-              %li Количество спален: 5
-              %li Таланг
-              %li Класс "Стандарт"
-              %li Вилла
-          .columns.large-4
-            %ul
-              %li Гостинная
-              %li Кухня
-              %li Столовая
-              %li Ванна
-          .columns.large-4
-            %ul
-              %li До пляжа Най Янг 1,5км
-              %li До аэропорта 1,5 км
-              %li Бассейн
-              %li Консьерж
+        .columns.large-8
+          .columns.large-12
+            %h3 Об этом объекте
+          .columns.large-12.photo_gallery
+            .my-gallery{:itemscope => "", :itemtype => "http://schema.org/ImageGallery"}
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "1024x1024", :href => "https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption  1
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "964x1024", :href => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption 2
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "1024x683", :href => "https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption 3
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "1024x768", :href => "https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption 4
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "1024x1024", :href => "https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption  5
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "964x1024", :href => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption 5
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "1024x683", :href => "https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption 7
+              %figure.last_visible{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject"}
+                %a{"data-size" => "1024x768", :href => "https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg"}/
+                  .last_visible_see_all Посмотреть все
+                %figcaption{:itemprop => "caption description"} Image caption 8
+              %figure{:itemprop => "associatedMedia", :itemscope => "", :itemtype => "http://schema.org/ImageObject", :style=>"display:none;"}
+                %a{"data-size" => "964x1024", :href => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg", :itemprop => "contentUrl"}
+                  %img{:alt => "Image description", :itemprop => "thumbnail", :src => "https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg"}/
+                %figcaption{:itemprop => "caption description"} Image caption 9
+
+          .columns.large-12.object_description.end
+            %h4 Описание
+            %p
+              Роскошная вилла  с великолепным видом на море расположена в уютной улочке, в пешей доступности от  магазинов, ресторанов, массажных салонов.
+            %p
+              4 спальни, 3 ванные комнаты, 2 бассейна - один на крыше, с  видом на море, другой в саду. Полностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом. . олностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом.
+            %p
+              Вилла расположена  на Равай, интерьер каждой комнаты продуман до мелочей и уникален. Есть барбекюшница. 4 спальни, 3 ванные комнаты, 2 бассейна - один на крыше, с  видом на море, другой в саду. Полностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом. . олностью оборудованная кухня (духовка, плита, микроволновка, холодильник), терраса на крыше, откуда можно насладиться прекраснейшим видом.
+            %p
+              Вилла расположена  на Равай, интерьер каждой комнаты продуман до мелочей и уникален. Есть барбекюшница.
+          .columns.large-12.object_facilities.end
+            %h4 Удобства:
+            .columns.large-4
+              %ul
+                %li.obj_bednum Количество спален: 5
+                %li.obj_location Таланг
+                %li.obj_class Класс "Стандарт"
+                %li.obj_type Вилла
+            .columns.large-4
+              %ul
+                %li.obj_lroom Гостинная
+                %li.obj_kitchen Кухня
+                %li.obj_canteen Столовая
+                %li.obj_bath Ванна
+            .columns.large-4
+              %ul
+                %li.obj_beach До пляжа Най Янг 1,5км
+                %li.obj_aero До аэропорта 1,5 км
+                %li.obj_pool Бассейн
+                %li.obj_concierge Консьерж
+            .object_facilities_others{:style=>"display:none;"}
+              .columns.large-4
+                %ul
+                  %li.obj_bednum Количество спален: 5
+                  %li.obj_location Таланг
+                  %li.obj_class Класс "Стандарт"
+                  %li.obj_type Вилла
+              .columns.large-4
+                %ul
+                  %li.obj_lroom Гостинная
+                  %li.obj_kitchen Кухня
+                  %li.obj_canteen Столовая
+                  %li.obj_bath Ванна
+              .columns.large-4
+                %ul
+                  %li.obj_beach До пляжа Най Янг 1,5км
+                  %li.obj_aero До аэропорта 1,5 км
+                  %li.obj_pool Бассейн
+                  %li.obj_concierge Консьерж
+            .text-right.show_all
+              %a{:href => "javascript://"} Показать все
+              %a{:href => "javascript://", :style=>"display:none;"} Скрыть
+          .columns.large-2.object_pricing
+            %h4
+              Цена,
+              %small Бат
+          .columns.large-10.object_pricing
+            %table.stack.table_pricing
+              %tr
+                %td
+
+                %td
+                  Низкий сезон
+                %td
+                  Высокий сезон
+                %td
+                  Пик сезона
+              %tr
+                %td
+                  День
+                %td
+                  По запросу
+                %td
+                  -
+                %td
+                  -
+              %tr
+                %td
+                  Неделя
+                %td
+                  -
+                %td
+                  -
+                %td
+                  -
+              %tr
+                %td
+                  Месяц
+                %td
+                  60 000
+                %td
+                  80 000
+                %td
+                  100 000
+              %tr
+                %td
+                  Долгий срок
+                %td{:colspan=>"3"} 30 000
+
+      %section.object_reviews.clearfix
+        .row
+          .columns.large-12
+            %h4 Отзывы
+            .row
+              .columns.large-6
+                .columns.large-12.review_block_container
+                  .review_block
+                    %p.review_author
+                      %b Василий Пункин,
+                      %i.city Москва
+                    %p
+                      Хочу выразить свою благодарность Константину и Ане за помощь при покупке кондо, а помощь собственно этим и не ограничилась, мебель покупали с ним, счет в банке - с ним... и т.д. В общем начавшееся деловое сотрудничество переросло в дружбу Аренда и продажа недвижимости в Хуа Хине.
+                    %p
+                      Всем рекомендую его как надежного, обязательного и пунктуального партнера.
+                .columns.large-12.review_block_container.end
+                  .review_block
+                    %p.review_author
+                      %b Василий Пункин,
+                      %i.city Москва
+                    %p
+                      Хочу выразить свою благодарность Константину и Ане за помощь при покупке кондо, В комплексе - огромный внутренний бассейн, парк, фитнес, детская комната, охрана, паркинг..
+                    %p
+                      Обслуживать комплекс будет Плюс Проперти - ведущее агентство ХХ по менеджменту кондо и поселков.
+                    %p
+                      В комплексе - студии - от 1.49 млн бат, 1 бедрумные квартиры - от 2.4 млн.бат и 2х бедрумные - от 4 млн.бат.
+                    %p
+                      Сейчас действует предложение по ценам пре-сейла, с началом строительства цена будет расти.
+              .columns.large-6
+                .columns.large-12.review_block_container
+                  .review_block
+                    %p.review_author
+                      %b Василий Пункин,
+                      %i.city Москва
+                    %p
+                      Костя, подскажите пожалуйста реально ли найти жильё в ХХ с кухней на месяц в пределах 15 000 бат? Таунхаус ли, апартаменты ли? Главное чтобы было прилично и поместились бы 2 взрослых и 2 ребёнка. На июнь месяц. Или этого будет недостаточно? Заранее большое спасибо.
+                .columns.large-12.review_block_container
+                  .review_block
+                    %p.review_author
+                      %b Василий Пункин,
+                      %i.city Москва
+                    %p
+                      Хочу выразить свою благодарность Константину и Ане за помощь при покупке кондо, В комплексе - огромный внутренний бассейн, парк, фитнес, детская комната, охрана, паркинг..
+                    %p
+                      Обслуживать комплекс будет Плюс Проперти - ведущее агентство ХХ по менеджменту кондо и поселков.
+                .columns.large-12.review_block_container.give_review
+                  %a{:href => "#"} Оставить отзыв
+      %section.object_map
+        .row
+          .columns.large-12
+            %h4 Карта
+        .google_map#google_map
 
 
     %section.catalogue_accomodations.clearfix
@@ -160,36 +343,36 @@
             %button.button.button-crimson{:href => "#"} Отправить
     %footer
       .row
-        .columns.large-3
+        .columns.large-3.small-12
           %h3 Новости и акции
           %form
             %input{:type=>"email", :placeholder=>"Email*"}
             %button.button.button-crimson{:href => "#"} Подписаться
-        .columns.large-2
+        .columns.large-2.small-6
           %h4 Аренда
           %a{:href => "#"} Апартаменты
           %a{:href => "#"} Дом
           %a{:href => "#"} Вилла
           %a{:href => "#"} Земля
-        .columns.large-2
+        .columns.large-2.small-6
           %h4 Продажа
           %a{:href => "#"} Вилла
           %a{:href => "#"} Дом
           %a{:href => "#"} Апартаменты
           %a{:href => "#"} Проекты
           %a{:href => "#"} Земля
-        .columns.large-2
+        .columns.large-2.small-4
           %h4 Услуги
           %a{:href => "#"} Аренда
           %a{:href => "#"} Транспорт
           %a{:href => "#"} Экскурсии
           %a{:href => "#"} Шоппинг
-        .columns.large-2
+        .columns.large-2.small-4
           %h4 Инфо-блок
           %a{:href => "#"} Инструкции
           %a{:href => "#"} Пхукет
           %a{:href => "#"} Разное
-        .columns.large-1.end
+        .columns.large-1.small-4
           %h4 О нас
           %a{:href => "#"} Контакты
           %a{:href => "#"} О нас
@@ -209,9 +392,102 @@
               %i.fa.fa-youtube
           %span &copy; 2015 InsideVilla
 
+    / Root element of PhotoSwipe. Must have class pswp.
+    .pswp{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      /
+        Background of PhotoSwipe.
+        It's a separate element, as animating opacity is faster than rgba().
+      .pswp__bg
+      / Slides wrapper with overflow:hidden.
+      .pswp__scroll-wrap
+        / Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+        .pswp__container
+          / don't modify these 3 pswp__item elements, data is added later on
+          .pswp__item
+          .pswp__item
+          .pswp__item
+        / Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+        .pswp__ui.pswp__ui--hidden
+          .pswp__top-bar
+            / Controls are self-explanatory. Order can be changed.
+            .pswp__counter
+            %button.pswp__button.pswp__button--close{:title => "Close (Esc)"}
+            %button.pswp__button.pswp__button--share{:title => "Share"}
+            %button.pswp__button.pswp__button--fs{:title => "Toggle fullscreen"}
+            %button.pswp__button.pswp__button--zoom{:title => "Zoom in/out"}
+            / Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR
+            / element will get class pswp__preloader--active when preloader is running
+            .pswp__preloader
+              .pswp__preloader__icn
+                .pswp__preloader__cut
+                  .pswp__preloader__donut
+          .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+            .pswp__share-tooltip
+          %button.pswp__button.pswp__button--arrow--left{:title => "Previous (arrow left)"}
+          %button.pswp__button.pswp__button--arrow--right{:title => "Next (arrow right)"}
+          .pswp__caption
+            .pswp__caption__center
 
 
+    // Modal Window
+    #animatedModal1.reveal{"data-animation-in" => "fade-in", "data-animation-out" => "fade-out", "data-close-on-click" => "true", "data-reveal" => ""}
+      %h3 Заявка на бронирование
+      // Сюда вставляем любую форму
+      %button.close-button{"aria-label" => "Close reveal", "data-close" => "", :type => "button"}
+        %span{"aria-hidden" => "true"} &times;
+
+
+    %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :media => "screen", :rel => "stylesheet"}
+    %link{:href => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/flick/jquery-ui.css", :media => "screen", :rel => "stylesheet"}
+    %link{:href => "css/photoswipe.css", :media => "screen", :rel => "stylesheet"}
+    %link{:href => "css/default-skin/default-skin.css", :media => "screen", :rel => "stylesheet"}
     %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js")
+    %script(src="http://code.jquery.com/ui/1.11.4/jquery-ui.js")
     %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js")
+    %script(src="http://maps.googleapis.com/maps/api/js?sensor=false")
     %script(src="js/foundation.js")
+    %script(src="js/photoswipe.min.js")
+    %script(src="js/photoswipe-ui-default.min.js")
     %script(src="js/app.js")
+    :javascript
+      var position = [7.736281, 98.777354];
+      function showGoogleMaps() {
+
+          var latLng = new google.maps.LatLng(position[0], position[1]);
+
+          var mapOptions = {
+              zoom: 17, // initialize zoom level - the max value is 21
+              streetViewControl: false, // hide the yellow Street View pegman
+              scaleControl: true, // allow users to zoom the Google Map
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              center: latLng,
+              scrollwheel: false,
+              navigationControl: false,
+              mapTypeControl: false,
+              scaleControl: false,
+          };
+
+          var villa_map = {
+            villa: {
+              center: {lat: 7.736281, lng: 98.777354},
+
+            }
+          };
+
+          map = new google.maps.Map(document.getElementById('google_map'),
+              mapOptions);
+          for (var villa in villa_map) {
+            // Add the circle for this city to the map.
+            var cityCircle = new google.maps.Circle({
+              strokeColor: '#37969e',
+              strokeOpacity: 0.8,
+              strokeWeight: 2,
+              fillColor: '#37969e',
+              fillOpacity: 0.35,
+              map: map,
+              center: villa_map[villa].center,
+              radius: 100
+            });
+          }
+      }
+      google.maps.event.addDomListener(window, 'load', showGoogleMaps);

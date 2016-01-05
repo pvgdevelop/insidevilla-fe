@@ -13,12 +13,12 @@
   %body
     %header
       .row
-        .columns.large-3
+        .columns.large-3.small-6
           %a.agency_logo{:href => "index.html"}
             %img{:src => "images/logo.png"}
-        .columns.large-3
+        .columns.large-3.small-6
           %span.agency_description Агентство недвижимости <br> о. Пхукет
-        .columns.large-6.text-right
+        .columns.large-6.text-right.small-12
           .agency_contacts
             %span.agency_mail
               %i.fa.fa-envelope
@@ -30,7 +30,7 @@
               %a{:href => "callto:+66943511068"} +66943511068
       %section.main_menu#main_menu
         .row
-          .columns.large-12
+          .columns.large-12.small-12
             %nav
               %ul.menu
                 %li
@@ -39,12 +39,12 @@
                   %a{:href => "catalogue.html"} Продажа
                 %li
                   %a{:href => "#"} Добавить
-                %li
+                %li.active
                   %a{:href => "services.html"} Услуги
                 %li
                   %a{:href => "#"} Инфо
                 %li
-                  %a{:href => "#"} О нас
+                  %a{:href => "#"} О&nbsp;нас
 
     %section.services_header#services_header
       .row
@@ -131,36 +131,36 @@
             %button.button.button-crimson{:href => "#"} Отправить
     %footer
       .row
-        .columns.large-3
+        .columns.large-3.small-12
           %h3 Новости и акции
           %form
             %input{:type=>"email", :placeholder=>"Email*"}
             %button.button.button-crimson{:href => "#"} Подписаться
-        .columns.large-2
+        .columns.large-2.small-6
           %h4 Аренда
           %a{:href => "#"} Апартаменты
           %a{:href => "#"} Дом
           %a{:href => "#"} Вилла
           %a{:href => "#"} Земля
-        .columns.large-2
+        .columns.large-2.small-6
           %h4 Продажа
           %a{:href => "#"} Вилла
           %a{:href => "#"} Дом
           %a{:href => "#"} Апартаменты
           %a{:href => "#"} Проекты
           %a{:href => "#"} Земля
-        .columns.large-2
+        .columns.large-2.small-4
           %h4 Услуги
           %a{:href => "#"} Аренда
           %a{:href => "#"} Транспорт
           %a{:href => "#"} Экскурсии
           %a{:href => "#"} Шоппинг
-        .columns.large-2
+        .columns.large-2.small-4
           %h4 Инфо-блок
           %a{:href => "#"} Инструкции
           %a{:href => "#"} Пхукет
           %a{:href => "#"} Разное
-        .columns.large-1.end
+        .columns.large-1.small-4
           %h4 О нас
           %a{:href => "#"} Контакты
           %a{:href => "#"} О нас

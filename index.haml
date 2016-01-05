@@ -44,7 +44,7 @@
                 %li
                   %a{:href => "#"} Инфо
                 %li
-                  %a{:href => "#"} О нас
+                  %a{:href => "#"} О&nbsp;нас
     %section.orbit_slider
       .orbit(aria-label="Favorite Phuket Places" data-orbit){:role => "slider"}
         %ul.orbit-container
@@ -54,61 +54,61 @@
             %i.fa.fa-angle-right
           %li.is-active.orbit-slide#slide-one
             .row
-              .columns.large-12
+              .columns.large-12.small-12
                 %h2 Аренда недвижимости
                 %h3 Лучшие предложения на рынке о. Пхукета
           %li.orbit-slide#slide-two
             .row
-              .columns.large-12
+              .columns.large-12.small-12
                 %h2 Аренда недвижимости
                 %h3 Здесь описание второго слайда
           %li.orbit-slide#slide-three
             .row
-              .columns.large-12
+              .columns.large-12.small-12
                 %h2 Аренда недвижимости
                 %h3 Здесь описание третьего слайда
           %li.orbit-slide#slide-four
             .row
-              .columns.large-12
+              .columns.large-12.small-12
                 %h2 Аренда недвижимости
                 %h3 Здесь описание четвертого слайда
-        .row
-          .columns.large-offset-1.large-4.form_wrapper
+        .row.form_row
+          .columns.large-offset-1.large-4.small-9.small-centered.form_wrapper
             .orbit_form_wrapper
               %form.orbit_form
                 %h3 Поиск
                 .row
-                  .columns.large-2
+                  .columns.large-2.small-2
                     %span Статус:
-                  .columns.large-10
+                  .columns.large-10.small-10
                     %select
                       %option Аренда
-                  .columns.large-2
+                  .columns.large-2.small-2
                     %span Район:
-                  .columns.large-10
+                  .columns.large-10.small-10
                     %select
                       %option Все районы
-                  .columns.large-2
+                  .columns.large-2.small-2
                     %span Тип:
-                  .columns.large-10
+                  .columns.large-10.small-10
                     %select
                       %option Все, аппартаменты
-                  .columns.large-2
+                  .columns.large-2.small-2
                     %span Спальни:
-                  .columns.large-10
+                  .columns.large-10.small-10
                     %select
                       %option Любое количество
-                  .columns.large-2
+                  .columns.large-2.small-2
                     %span Ванные:
-                  .columns.large-10
+                  .columns.large-10.small-10
                     %select
                       %option От 1 до 2
-                  .columns.large-2
+                  .columns.large-2.small-2
                     %span До&nbsp;моря:
-                  .columns.large-10
+                  .columns.large-10.small-10
                     %select
                       %option Любое расстояние
-                  .columns.large-12
+                  .columns.large-12.small-12
                     %button.button.button_search
                       %i.fa.fa-search
                       Найти
@@ -258,64 +258,74 @@
                 %i.fa.fa-angle-right
               %li.is-active.orbit-slide
                 .row
-                  .columns.large-10.large-centered.review-slide
+                  .columns.large-10.small-8.small-centered.large-centered.review-slide
                     .review_wrapper
-                      .columns.large-3
+                      .columns.large-3.small-3
                         %img{:src => "images/customer.jpg"}
-                      .columns.large-9
-                        %p Lorem ipsum...
+                      .columns.large-9.small-9
+                        .review_article
+                          %h5 Вилла Саншайн №39
+                          %p Отдыхали на "Вилле" Бояна с семьей в августе 2015г. Напишу все по порядку. Встретили нас в аэропорту, довезли до "Виллы", за это большое спасибо. Было угощение от хозяина, как и во многих отзывах, тоже огромное спасибо. Когда дело дошло до размещения, которое мы бронировали в марте, то нас заселили в номер не соответствующий категории номера, что мы бронировали, даже упуская...
+                          %p.author_name
+                            Николай,
+                            %i Банкир
               %li.orbit-slide
                 .row
-                  .columns.large-10.large-centered.review-slide
+                  .columns.large-10.small-8.small-centered.large-centered.review-slide
                     .review_wrapper
-                      .columns.large-2
+                      .columns.large-3.small-3
                         %img{:src => "images/customer.jpg"}
-                      .columns.large-10
-                        %p Lorem ipsum...
+                      .columns.large-9.small-9
+                        .review_article
+                          %h5 Вилла Саншайн №39
+                          %p Отдыхали на "Вилле" Бояна с семьей в августе 2015г. Напишу все по порядку. Встретили нас в аэропорту, довезли до "Виллы", за это большое спасибо. Было угощение от хозяина, как и во многих отзывах, тоже огромное спасибо. Когда дело дошло до размещения, которое мы бронировали в марте, то нас заселили в номер не соответствующий категории номера, что мы бронировали, даже упуская...
+                          %p.author_name
+                            Николай,
+                            %i Банкир
           %a.button.button-crimson{:href => "#"} Еще отзывы
     %section.contact-form.clearfix
       .row
-        .columns.large-12
+        .columns.large-12.small-12
           %form
-            .columns.large-4
+            .columns.large-4.small-6
               %input{:type=>"text", :placeholder=>"Имя*"}
               %input{:type=>"text", :placeholder=>"Телефон*"}
               %input{:type=>"email", :placeholder=>"Email*"}
-            .columns.large-8
+            .columns.large-8.small-6
               %textarea{:placeholder=>"Ваше сообщение"}
             %button.button.button-crimson{:href => "#"} Отправить
     %footer
       .row
-        .columns.large-3
+        .columns.large-3.small-12
           %h3 Новости и акции
           %form
             %input{:type=>"email", :placeholder=>"Email*"}
             %button.button.button-crimson{:href => "#"} Подписаться
-        .columns.large-2
+        .columns.large-2.small-6
           %h4 Аренда
           %a{:href => "#"} Апартаменты
           %a{:href => "#"} Дом
           %a{:href => "#"} Вилла
           %a{:href => "#"} Земля
-        .columns.large-2
+        .columns.large-2.small-6
           %h4 Продажа
           %a{:href => "#"} Вилла
           %a{:href => "#"} Дом
           %a{:href => "#"} Апартаменты
           %a{:href => "#"} Проекты
           %a{:href => "#"} Земля
-        .columns.large-2
+        .columns.large-2.small-4
           %h4 Услуги
           %a{:href => "#"} Аренда
           %a{:href => "#"} Транспорт
           %a{:href => "#"} Экскурсии
           %a{:href => "#"} Шоппинг
-        .columns.large-2
+        .columns.large-2.small-4
           %h4 Инфо-блок
           %a{:href => "#"} Инструкции
           %a{:href => "#"} Пхукет
           %a{:href => "#"} Разное
-        .columns.large-1.end
+        .columns.large-1.small-4
           %h4 О нас
           %a{:href => "#"} Контакты
           %a{:href => "#"} О нас

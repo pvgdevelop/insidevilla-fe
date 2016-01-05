@@ -12,19 +12,29 @@ $("#catalogue_filter").backstretch("images/review_bg.png");
 $("#services_header").backstretch("images/services1.png");
 // Object Header BG
 $("#object_header_photo").backstretch("images/villa2.jpg");
+
 // Main Page form button
 $(".button_search_open").click(function () {
-  $(".orbit_form").toggle();
+  $(".orbit_form").slideToggle("slow");
   $(".button_text").toggle();
 });
 // Catalogue Page price-filter caret toggle
 $(".catalogue_price_filter").click(function () {
   $(".fa-caret-down").toggleClass("fa-caret-up");
 });
+// ID Search
+$(".id_search").click(function () {
+  $(".id_search_form").toggle();
+  $(".id_search").toggle();
+});
 // Object Facilities open
 $(".show_all").click(function () {
-  $(".object_facilities_others").toggle();
+  $(".object_facilities_others").slideToggle();
   $(".show_all > a").toggle();
+});
+// Adv Search Catalogue
+$(".advanced_search_open").click(function () {
+  $(".advanced_search").slideToggle("fast");
 });
 // Adv Search Open
 $(".catalogue_price_filter").click(function () {

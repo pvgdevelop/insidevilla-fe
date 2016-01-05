@@ -49,7 +49,7 @@
     %section.catalogue_filter.clearfix#catalogue_filter
       .row
         .columns.large-12
-          %form
+          %form.filter_form
             %h3 Поиск
             .columns.large-10.filter
               .columns.large-4
@@ -88,10 +88,27 @@
                 .columns.large-10
                   %select
                     %option Любое расстояние
+              .row
+                .columns.large-1
+                  %label(for="left-label") Цена:
+                .columns.large-11.price_catalogue_filter
+                  .row.collapse
+                    .small-6.large-3.columns
+                      %input{:placeholder => "Цена от", :type => "text"}
+                    .small-6.large-3.columns
+                      %input{:placeholder => "Цена до", :type => "text"}
+                    .small-12.large-6.columns
+                      %ul.button-group.round.toggle.price_radio_group{"data-toggle" => "buttons-radio"}
+                        %li
+                          %input#r1{"data-toggle" => "button", :name => "r-group", :type => "radio"}
+                            %label.button{:for => "r1"} бат/месяц
+                        %li
+                          %input#r2{"data-toggle" => "button", :name => "r-group", :type => "radio"}
+                            %label.button{:for => "r2"} бат/сутки
               .columns.large-12
                 %h5.advanced_search_open Расширенный поиск
-                .advanced_search
-                  %hr
+                %hr
+                .advanced_search{:style=>"display:none;"}
                   .columns.large-3
                     %div.checkbox
                       %input#checkbox1(type="checkbox")
@@ -126,7 +143,13 @@
               %button.button.button_search.button-crimson
                 %i.fa.fa-search
                 Поиск
-              %button.button.button_search.id_search Поиск по ID
+              .button.button_search.id_search Поиск по ID
+              .row.collapse.postfix-round.id_search_form{:style=>"display:none;"}
+                .small-9.columns
+                  %input{:placeholder => "ID", :type => "text"}
+                .small-3.columns
+                  %a.button.id_search_button.postfix{:href => "#"}
+                    .fa.fa-search
     %section.catalogue_accomodations.clearfix
       .row
         .columns.large-12

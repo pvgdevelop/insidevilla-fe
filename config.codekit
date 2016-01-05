@@ -3272,6 +3272,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/jslider.round.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/jslider.round.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/photoswipe.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -3594,6 +3603,17 @@
 		"initialSize": 710,
 		"inputAbbreviatedPath": "\/images\/icons\/obj_type.png",
 		"outputAbbreviatedPath": "\/images\/icons\/obj_type.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/jslider.round.plastic.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1956,
+		"inputAbbreviatedPath": "\/images\/jslider.round.plastic.png",
+		"outputAbbreviatedPath": "\/images\/jslider.round.plastic.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

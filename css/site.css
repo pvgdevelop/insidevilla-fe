@@ -137,10 +137,11 @@ header {
   bottom: 0;
   width: 100%; }
   .orbit_form_wrapper .orbit_form {
+    width: 100%;
     display: none;
     color: #999;
     font-size: 16px;
-    padding: 20px 30px 45px;
+    padding: 15px 30px 45px;
     background: #fff;
     bottom: 51px;
     margin: 0; }
@@ -297,8 +298,8 @@ header {
   .gray_block h2:before {
     background: #333; }
 
-.why_we_are span {
-  font-size: 20px; }
+.why_we_are .large-4 span {
+  font-size: 22px; }
 
 .orbit:focus {
   outline: 0; }
@@ -418,8 +419,19 @@ header {
     margin-top: 45px;
     border-radius: 50%;
     border: 3px solid #fff; }
-  .reviews_slider .orbit .orbit-slide .review-slide p {
+  .reviews_slider .orbit .orbit-slide .review-slide h5 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold; }
+  .reviews_slider .orbit .orbit-slide .review-slide .review_article {
     margin: 45px 30px; }
+  .reviews_slider .orbit .orbit-slide .review-slide p {
+    font-size: 16px; }
+  .reviews_slider .orbit .orbit-slide .review-slide .author_name {
+    font-size: 24px;
+    text-align: right; }
+    .reviews_slider .orbit .orbit-slide .review-slide .author_name i {
+      font-size: 16px; }
 .reviews_slider .orbit .orbit-previous,
 .reviews_slider .orbit .orbit-next {
   padding: 8px 10px;
@@ -508,7 +520,7 @@ footer {
 .catalogue_filter form {
   background: rgba(255, 255, 255, 0.8);
   position: relative;
-  height: 330px;
+  height: 390px;
   margin: 20px 0;
   padding: 10px 0 0; }
   .catalogue_filter form h3 {
@@ -517,7 +529,8 @@ footer {
     font-size: 24px;
     color: #006699; }
   .catalogue_filter form h5 {
-    color: #069; }
+    color: #069;
+    cursor: pointer; }
   .catalogue_filter form hr {
     margin: 5px 0 15px;
     border-width: 3px; }
@@ -550,6 +563,40 @@ footer {
     text-align: right;
     font-size: 18px;
     color: #999; }
+
+select, input {
+  background-color: #fff; }
+
+.price_catalogue_filter {
+  padding-left: 10px; }
+  .price_catalogue_filter input[type="text"] {
+    border-right: none;
+    background: #fff; }
+
+.price_radio_group {
+  margin-left: 0px;
+  margin-right: 30px; }
+  .price_radio_group li {
+    display: inline-block;
+    width: 50%; }
+    .price_radio_group li:last-child {
+      margin-left: -4px; }
+    .price_radio_group li label.button {
+      text-align: center;
+      width: 100%;
+      background: #fff;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      padding: 11px 0 10px; }
+      .price_radio_group li label.button:hover {
+        color: #999;
+        background: #efefef; }
+  .price_radio_group input[data-toggle] {
+    display: none; }
+  .price_radio_group input[data-toggle]:checked + label,
+  .price_radio_group input[data-toggle]:checked + label:active {
+    background-color: #efefef;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05); }
 
 .catalogue_price_filter {
   display: block;
@@ -981,3 +1028,60 @@ footer {
     color: #fff;
     text-align: center;
     font-size: 20px; }
+
+.button:hover {
+  background: #003D5C; }
+
+.button-crimson:hover {
+  background: #A10050; }
+
+.button_search_open:hover {
+  background: #c06; }
+
+.id_search_form {
+  margin: 20px 0 16px;
+  height: 67px; }
+  .id_search_form input {
+    font-size: 22px;
+    padding: 30px 15px 29px; }
+  .id_search_form .id_search_button {
+    padding: 20px 11px; }
+
+@media screen and (max-width: 980px) {
+  .menu li {
+    padding-left: 0;
+    background: none; }
+    .menu li a {
+      padding-left: 13px;
+      padding-right: 13px; }
+
+  .orbit .form_row {
+    padding-right: 25px; }
+
+  .orbit_slider .orbit {
+    margin: 0; }
+    .orbit_slider .orbit h2, .orbit_slider .orbit h3 {
+      text-align: center; }
+    .orbit_slider .orbit h2 {
+      font-size: 52px;
+      margin-top: 80px; }
+    .orbit_slider .orbit h3 {
+      font-size: 24px; }
+
+  .steps_of_work {
+    display: none; }
+
+  .customer_reviews {
+    margin-top: 0; }
+
+  .reviews_slider .orbit {
+    height: 690px; }
+    .reviews_slider .orbit .orbit-slide .review-slide {
+      height: 660px;
+      margin-bottom: 10px; }
+
+  .agency_contacts {
+    margin-top: 25px;
+    text-align: center; }
+    .agency_contacts .agency_mail {
+      display: block; } }

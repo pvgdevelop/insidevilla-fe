@@ -69,7 +69,7 @@
     <section class='catalogue_filter clearfix' id='catalogue_filter'>
       <div class='row'>
         <div class='columns large-12'>
-          <form>
+          <form class='filter_form'>
             <h3>Поиск</h3>
             <div class='columns large-10 filter'>
               <div class='columns large-4'>
@@ -132,10 +132,39 @@
                   </select>
                 </div>
               </div>
+              <div class='row'>
+                <div class='columns large-1'>
+                  <label for='left-label'>Цена:</label>
+                </div>
+                <div class='columns large-11 price_catalogue_filter'>
+                  <div class='row collapse'>
+                    <div class='small-6 large-3 columns'>
+                      <input placeholder='Цена от' type='text'>
+                    </div>
+                    <div class='small-6 large-3 columns'>
+                      <input placeholder='Цена до' type='text'>
+                    </div>
+                    <div class='small-12 large-6 columns'>
+                      <ul class='button-group round toggle price_radio_group' data-toggle='buttons-radio'>
+                        <li>
+                          <input data-toggle='button' id='r1' name='r-group' type='radio'>
+                            <label class='button' for='r1'>бат/месяц</label>
+                          </input>
+                        </li>
+                        <li>
+                          <input data-toggle='button' id='r2' name='r-group' type='radio'>
+                            <label class='button' for='r2'>бат/сутки</label>
+                          </input>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class='columns large-12'>
                 <h5 class='advanced_search_open'>Расширенный поиск</h5>
-                <div class='advanced_search'>
-                  <hr>
+                <hr>
+                <div class='advanced_search' style='display:none;'>
                   <div class='columns large-3'>
                     <div class='checkbox'>
                       <input id='checkbox1' type='checkbox'>
@@ -195,7 +224,17 @@
                 <i class='fa fa-search'></i>
                 Поиск
               </button>
-              <button class='button button_search id_search'>Поиск по ID</button>
+              <div class='button button_search id_search'>Поиск по ID</div>
+              <div class='row collapse postfix-round id_search_form' style='display:none;'>
+                <div class='small-9 columns'>
+                  <input placeholder='ID' type='text'>
+                </div>
+                <div class='small-3 columns'>
+                  <a class='button id_search_button postfix' href='#'>
+                    <div class='fa fa-search'></div>
+                  </a>
+                </div>
+              </div>
             </div>
           </form>
         </div>

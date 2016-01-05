@@ -517,39 +517,42 @@ footer {
   footer span {
     color: #838383; }
 
-.catalogue_filter form {
+#catalogue_filter {
+  height: auto;
+  overflow: hidden; }
+
+.catalogue_filter .filter_form {
   background: rgba(255, 255, 255, 0.8);
-  position: relative;
-  height: 390px;
+  overflow: hidden;
   margin: 20px 0;
   padding: 10px 0 0; }
-  .catalogue_filter form h3 {
+  .catalogue_filter .filter_form h3 {
     margin: 0 15px 10px;
     text-transform: uppercase;
     font-size: 24px;
     color: #006699; }
-  .catalogue_filter form h5 {
+  .catalogue_filter .filter_form h5 {
     color: #069;
     cursor: pointer; }
-  .catalogue_filter form hr {
+  .catalogue_filter .filter_form hr {
     margin: 5px 0 15px;
     border-width: 3px; }
-  .catalogue_filter form .checkbox input {
+  .catalogue_filter .filter_form .checkbox input {
     margin-bottom: 5px; }
-  .catalogue_filter form .checkbox label {
+  .catalogue_filter .filter_form .checkbox label {
     margin-top: 0; }
-  .catalogue_filter form .filter,
-  .catalogue_filter form .filter .large-2 {
+  .catalogue_filter .filter_form .filter,
+  .catalogue_filter .filter_form .filter .large-2 {
     padding-left: 0;
     padding-right: 0; }
-  .catalogue_filter form .button-crimson {
+  .catalogue_filter .filter_form .button-crimson {
     position: relative;
     width: 100%;
     margin: 0;
     font-size: 24px;
     padding: 33px 0;
     text-transform: uppercase; }
-    .catalogue_filter form .button-crimson .fa-search {
+    .catalogue_filter .filter_form .button-crimson .fa-search {
       position: absolute;
       display: block;
       width: 14px;
@@ -558,7 +561,7 @@ footer {
       left: 20px;
       margin-right: 20px;
       font-size: 14px; }
-  .catalogue_filter form label {
+  .catalogue_filter .filter_form label {
     margin-top: 4px;
     text-align: right;
     font-size: 18px;
@@ -587,7 +590,8 @@ select, input {
       background: #fff;
       border: 1px solid #ccc;
       font-size: 1rem;
-      padding: 11px 0 10px; }
+      padding: 11px 0 10px;
+      margin: 0 0 4px; }
       .price_radio_group li label.button:hover {
         color: #999;
         background: #efefef; }
@@ -1084,4 +1088,30 @@ select, input {
     margin-top: 25px;
     text-align: center; }
     .agency_contacts .agency_mail {
-      display: block; } }
+      display: block; }
+
+  .catalogue_filter h3, .catalogue_filter h5 {
+    text-align: center; }
+  .catalogue_filter .filter_form .row {
+    padding: 0 15px; }
+  .catalogue_filter label {
+    float: left;
+    margin: 0 15px 5px; }
+
+  .advanced_search .checkbox {
+    clear: both;
+    display: block;
+    margin-bottom: 10px; }
+    .advanced_search .checkbox input[type="checkbox"] {
+      float: left;
+      margin-top: 10px; }
+
+  .price_radio_group {
+    margin-right: 0;
+    margin-bottom: 0; }
+
+  .id_search_form {
+    margin-left: 0;
+    padding: 0 !important; }
+    .id_search_form .button {
+      width: 100%; } }

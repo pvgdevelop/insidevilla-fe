@@ -596,10 +596,13 @@ footer{
     color: #838383;
   }
 }
-.catalogue_filter form{
+#catalogue_filter{
+  height: auto;
+  overflow: hidden;
+}
+.catalogue_filter .filter_form{
   background: rgba(255,255,255,.8);
-  position: relative;
-  height: 390px;
+  overflow:hidden;
   margin: 20px 0;
   padding: 10px 0 0;
   h3{
@@ -680,6 +683,7 @@ select, input{
       border: 1px solid #ccc;
       font-size: 1rem;
       padding: 11px 0 10px;
+      margin: 0 0 4px;
       &:hover{
         color: #999;
         background: #efefef;
@@ -1270,4 +1274,40 @@ select, input{
       display: block;
     }
   }
+  .catalogue_filter{
+    h3, h5{
+      text-align: center;
+    }
+    .filter_form{
+      .row{
+        padding: 0 15px;
+      }
+    }
+    label{
+      float: left;
+      margin: 0 15px 5px;
+    }
+  }
+  .advanced_search{
+    .checkbox{
+      clear: both;
+      display: block;
+      margin-bottom: 10px;
+      input[type="checkbox"]{
+        float: left;
+        margin-top: 10px;
+      }
+    }
+ }
+ .price_radio_group{
+   margin-right: 0;
+   margin-bottom: 0;
+ }
+ .id_search_form{
+   margin-left: 0;
+   padding: 0!important;
+   .button{
+     width: 100%;
+   }
+ }
 }

@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: normal; }
 body {
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 *:focus {
   outline: none; }
@@ -1131,5 +1131,5 @@ select, input {
     background: none; }
     .menu li a {
       font-size: 12px;
-      padding-left: 5px;
-      padding-right: 5px; } }
+      padding-left: 0px;
+      padding-right: 0px; } }

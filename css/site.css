@@ -418,7 +418,7 @@ header {
     color: #333; }
 
 .reviews_slider .orbit .orbit-slide .review-slide {
-  height: 300px;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid #fff; }
   .reviews_slider .orbit .orbit-slide .review-slide img {
@@ -1085,11 +1085,8 @@ select, input {
   .customer_reviews {
     margin-top: 0; }
 
-  .reviews_slider .orbit {
-    height: 690px; }
-    .reviews_slider .orbit .orbit-slide .review-slide {
-      height: 660px;
-      margin-bottom: 10px; }
+  .reviews_slider .orbit .orbit-slide .review-slide {
+    margin-bottom: 10px; }
 
   .agency_contacts {
     margin-top: 25px;

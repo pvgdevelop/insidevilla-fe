@@ -960,7 +960,7 @@ select, input {
   width: 360px;
   max-width: 100%;
   padding: 0 0 10px;
-  height: 245px;
+  min-height: 245px;
   background: #e8e8e8;
   font-size: 18px;
   z-index: 101; }
@@ -1114,4 +1114,7 @@ select, input {
     margin-left: 0;
     padding: 0 !important; }
     .id_search_form .button {
-      width: 100%; } }
+      width: 100%; }
+
+  #object_booking_form {
+    display: none; } }

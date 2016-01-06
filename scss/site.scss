@@ -1268,6 +1268,11 @@ span.ui-icon.ui-icon-circle-triangle-w{
   margin-top: -5px!important;
   color: #069!important;
 }
+.object_facilities_others{
+  li:first-child{
+    margin-top: 5px;
+  }
+}
 @media screen{
   body.is-reveal-open{
     overflow: hidden;

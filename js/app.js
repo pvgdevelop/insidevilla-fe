@@ -29,7 +29,7 @@ $(".id_search").click(function () {
 });
 // Object Facilities open
 $(".show_all").click(function () {
-  $(".object_facilities_others").slideToggle();
+  $(".object_facilities_others").slideToggle("slow");
   $(".show_all > a").toggle();
 });
 // Adv Search Catalogue

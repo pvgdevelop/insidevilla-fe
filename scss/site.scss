@@ -1242,6 +1242,31 @@ select, input{
     padding: 20px 11px;
   }
 }
+.ui-widget, .ui-datepicker .ui-datepicker-title select{
+  font-size: 16px!important;
+  font-family: "OpenSansCondensedLight"!important;
+}
+.ui-state-default{
+  background: #fff!important;
+  color: #069!important;
+}
+.ui-state-hover{
+  background: #c06!important;
+  border-color: #c06!important;
+  color: #fff!important;
+}
+.ui-state-highlight{
+  background: #069!important;
+  color: #fff!important;
+}
+.ui-datepicker-month{
+  padding: 2px 5px!important;
+  height: 24px!important;
+}
+span.ui-icon.ui-icon-circle-triangle-e,
+span.ui-icon.ui-icon-circle-triangle-w{
+  margin-top: -5px!important;
+}
 @media screen and (max-width: 980px){
   .menu{
     li{

@@ -7,7 +7,7 @@ $("#slide-four").backstretch("images/villa.jpg");
 // Reviews BG
 $("#customer_reviews").backstretch("images/review_bg.png");
 // catalogue_filter BG
-$("#catalogue_filter").backstretch("images/review_bg.png");
+//$("#catalogue_filter").backstretch("images/review_bg.png");
 // services_header BG
 $("#services_header").backstretch("images/services1.png");
 // Object Header BG

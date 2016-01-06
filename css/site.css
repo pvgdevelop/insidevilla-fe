@@ -524,7 +524,10 @@ footer {
     color: #838383; }
 
 #catalogue_filter {
-  background: url("../images/review_bg.png") no-repeat cover; }
+  background: url("../images/review_bg.png") no-repeat;
+  background-size: cover;
+  background-position: cover;
+  overflow: hidden; }
 
 .catalogue_filter .filter_form {
   background: rgba(255, 255, 255, 0.8);

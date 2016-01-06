@@ -10,6 +10,12 @@
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/app.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/site.css", :media => "screen", :rel => "stylesheet"}
+
+    // Price Slider
+    %link{:href => "css/jslider.css", :media => "screen", :rel => "stylesheet"}
+    %script(src="js/jquery-1.7.1.js")
+    %script(src="js/jquery.slider.min.js")
+
   %body
     %header
       .row
@@ -106,6 +112,16 @@
                           %li
                             %input#r2{"data-toggle" => "button", :name => "r-group", :type => "radio"}
                               %label.button{:for => "r2"} бат/сутки
+                    .layout-slider
+                      %input#Slider3{:name => "area", :type => "slider", :value => "25;75"}/
+                    %script{:charset => "utf-8", :type => "text/javascript"}
+                      jQuery("#Slider3").slider({
+                      from: 0,
+                      to: 100,
+                      heterogeneity: ['50/100', '75/250'],
+                      limits: false,
+                      step: 1,
+                      skin: "round_plastic" });
                 .columns.large-12.small-12
                   %h5.advanced_search_open Расширенный поиск
                   %hr

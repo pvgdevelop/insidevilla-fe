@@ -667,10 +667,17 @@ select, input{
 }
 .price_catalogue_filter{
   padding-left: 10px;
+  input, ul{
+    margin-bottom: 0;
+  }
   input[type="text"]{
     border-right: none;
     background: #fff;
   }
+}
+.layout-slider{
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 .price_radio_group{
   margin-left: 0px;

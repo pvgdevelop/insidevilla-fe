@@ -578,9 +578,15 @@ select, input {
 
 .price_catalogue_filter {
   padding-left: 10px; }
+  .price_catalogue_filter input, .price_catalogue_filter ul {
+    margin-bottom: 0; }
   .price_catalogue_filter input[type="text"] {
     border-right: none;
     background: #fff; }
+
+.layout-slider {
+  margin-right: 30px;
+  margin-bottom: 20px; }
 
 .price_radio_group {
   margin-left: 0px;

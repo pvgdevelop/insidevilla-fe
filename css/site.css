@@ -875,6 +875,7 @@ select, input {
   .object_facilities h4 {
     margin-bottom: 15px; }
   .object_facilities .show_all {
+    clear: both;
     text-decoration: underline;
     margin: 10px 0 0;
     font-size: 18px;

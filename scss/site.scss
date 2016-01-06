@@ -1268,6 +1268,11 @@ span.ui-icon.ui-icon-circle-triangle-w{
   margin-top: -5px!important;
   color: #069!important;
 }
+@media screen{
+  body.is-reveal-open{
+    overflow: hidden;
+  }
+}
 @media screen and (max-width: 980px){
   .menu{
     li{

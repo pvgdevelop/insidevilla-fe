@@ -4543,26 +4543,26 @@ Foundation.plugin(OffCanvas, 'OffCanvas');
      * @option
      * @example 'slide-in-right'
      */
-    animInFromRight: 'slide-in-right',
+    animInFromRight: 'fade-in',
     /**
      * motion-ui animation class to apply
      * @option
      * @example 'slide-out-right'
      */
-    animOutToRight: 'slide-out-right',
+    animOutToRight: 'fade-out',
     /**
      * motion-ui animation class to apply
      * @option
      * @example 'slide-in-left'
      *
      */
-    animInFromLeft: 'slide-in-left',
+    animInFromLeft: 'fade-in',
     /**
      * motion-ui animation class to apply
      * @option
      * @example 'slide-out-left'
      */
-    animOutToLeft: 'slide-out-left',
+    animOutToLeft: 'fade-out',
     /**
      * Allows Orbit to automatically animate on page load.
      * @option
@@ -4574,7 +4574,7 @@ Foundation.plugin(OffCanvas, 'OffCanvas');
      * @option
      * @example 5000
      */
-    timerDelay: 5000,
+    timerDelay: 3000,
     /**
      * Allows Orbit to infinitely loop through the slides
      * @option

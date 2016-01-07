@@ -1111,6 +1111,15 @@ span.ui-icon.ui-icon-circle-triangle-w {
   .orbit .form_row {
     padding-right: 25px; }
 
+  .orbit_form_wrapper .orbit_form {
+    -o-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+  .orbit_form_wrapper .button_search_open {
+    width: 100%; }
+
   .orbit_slider .orbit {
     margin: 0; }
     .orbit_slider .orbit h2, .orbit_slider .orbit h3 {

@@ -152,10 +152,22 @@ header {
     background: #fff;
     bottom: 51px;
     margin: 0;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s; }
   .orbit_form_wrapper .MarginTop {
     margin-top: 0 !important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
+    -o-transition-delay: .2s;
+    -ms-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    -webkit-transition-delay: .2s;
     transition-delay: .2s; }
   .orbit_form_wrapper span {
     display: block;
@@ -181,13 +193,25 @@ header {
     font-size: 18px;
     text-align: left;
     font-weight: bold;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
     transition: .2s;
+    -o-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -webkit-transition-delay: .5s;
     transition-delay: .5s; }
     .orbit_form_wrapper .button_search_open .fa {
       font-size: 16px;
       margin-right: 5px; }
   .orbit_form_wrapper .FullWidth {
     width: 100%;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
     transition: .2s; }
 
 .form_wrapper .orbit_form_wrapper h3 {

@@ -38,8 +38,11 @@ $(".advanced_search_open").click(function () {
   $(".advanced_search").slideToggle("fast");
 });
 // Adv Search Open
-$(".catalogue_price_filter").click(function () {
-  $(".fa-caret-down").toggleClass("fa-caret-up");
+$(".catalogue_byprice_filter").click(function () {
+  $(".catalogue_byprice_filter > .fa-caret-down").toggleClass("fa-caret-up");
+});
+$(".catalogue_date_filter").click(function () {
+  $(".catalogue_date_filter > .fa-caret-down").toggleClass("fa-caret-up");
 });
 
 $(function() {

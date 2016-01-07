@@ -117,7 +117,7 @@
                     %script{:charset => "utf-8", :type => "text/javascript"}
                       jQuery("#Slider3").slider({
                       from: 0,
-                      to: 100,
+                      to:300,
                       heterogeneity: ['50/100', '75/250'],
                       limits: false,
                       step: 1,
@@ -170,10 +170,10 @@
     %section.catalogue_accomodations.clearfix
       .row
         .columns.large-12
-          %button.catalogue_price_filter
+          %button.catalogue_byprice_filter
             Сортировать по цене
             %i.fa.fa-caret-down
-          %button.catalogue_price_filter
+          %button.catalogue_date_filter
             Сортировать по дате
             %i.fa.fa-caret-down
         .columns.large-4

@@ -180,6 +180,7 @@ header{
     .MarginTop{
       margin-top: 0!important;
       transition: .5s;
+      transition-delay: .2s;
     }
     span{
       display: block;
@@ -200,7 +201,7 @@ header{
       position: absolute;
       text-transform: uppercase;
       position: absolute;
-      width: 100%;
+      width: 50%;
       bottom: -16px;
       left: 0;
       background: #cc0066;
@@ -208,10 +209,16 @@ header{
       font-size: 18px;
       text-align: left;
       font-weight: bold;
+      transition: .2s;
+      transition-delay: .5s;
       .fa{
         font-size: 16px;
         margin-right: 5px;
       }
+    }
+    .FullWidth{
+      width: 100%;
+      transition: .2s;
     }
 }
 .form_wrapper .orbit_form_wrapper h3{

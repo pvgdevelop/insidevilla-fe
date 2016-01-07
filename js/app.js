@@ -16,6 +16,7 @@ $("#object_header_photo").backstretch("images/villa2.jpg");
 //Main Page form button
 $(".button_search_open").click(function () {
   $(".orbit_form").toggleClass("MarginTop");
+  $(".button_search_open").toggleClass("FullWidth");
   $(".button_text").toggle();
 });
 // Catalogue Page price-filter caret toggle

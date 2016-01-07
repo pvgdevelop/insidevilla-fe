@@ -155,7 +155,8 @@ header {
     transition: .5s; }
   .orbit_form_wrapper .MarginTop {
     margin-top: 0 !important;
-    transition: .5s; }
+    transition: .5s;
+    transition-delay: .2s; }
   .orbit_form_wrapper span {
     display: block;
     margin: 10px 0; }
@@ -172,17 +173,22 @@ header {
     position: absolute;
     text-transform: uppercase;
     position: absolute;
-    width: 100%;
+    width: 50%;
     bottom: -16px;
     left: 0;
     background: #cc0066;
     padding: 15px 25px;
     font-size: 18px;
     text-align: left;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: .2s;
+    transition-delay: .5s; }
     .orbit_form_wrapper .button_search_open .fa {
       font-size: 16px;
       margin-right: 5px; }
+  .orbit_form_wrapper .FullWidth {
+    width: 100%;
+    transition: .2s; }
 
 .form_wrapper .orbit_form_wrapper h3 {
   color: #006699;

@@ -141,8 +141,7 @@ header {
   position: absolute;
   height: 505px;
   bottom: 0;
-  width: 100%;
-  overflow-y: hidden; }
+  width: 100%; }
   .orbit_form_wrapper .orbit_form {
     margin-top: 505px !important;
     width: 100%;
@@ -1108,9 +1107,6 @@ span.ui-icon.ui-icon-circle-triangle-w {
   margin-top: -5px !important;
   color: #069 !important; }
 
-@media screen {
-  body.is-reveal-open {
-    overflow: hidden; } }
 @media screen and (max-width: 980px) {
   .menu li {
     padding-left: 0;

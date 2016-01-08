@@ -12,7 +12,6 @@ $("#customer_reviews").backstretch("images/review_bg.png");
 $("#services_header").backstretch("images/services1.png");
 // Object Header BG
 $("#object_header_photo").backstretch("images/villa2.jpg");
-
 //Main Page form button
 $(".button_search_open").click(function () {
   $(".orbit_form").toggleClass("MarginTop");
@@ -105,7 +104,6 @@ function Ascroll() {
   }, false);
 }
 })()
-
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 

@@ -59,9 +59,15 @@
             Вилла Sunshine с видом на море
             %small ID 012345
           %ul.header_villa_about
-            %li.villa_type Вилла
-            %li.villa_bedrooms 3 спальни
-            %li.villa_bathroom 2 ванные
+            %li.villa_type
+              %img.header_villa_image{:src=>"images/villa.png"}
+              Вилла
+            %li.villa_bedrooms
+              %img.header_villa_image{:src=>"images/bedroom.png"}
+              3 спальни
+            %li.villa_bathroom
+              %img.header_villa_image{:src=>"images/bath.png"}
+              2 ванные
         .columns.large-4
           .object_booking_form#object_booking_form
             .object_price

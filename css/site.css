@@ -1139,8 +1139,15 @@ span.ui-icon.ui-icon-circle-triangle-w {
     .orbit_slider .orbit h3 {
       font-size: 24px; }
 
-  .steps_of_work {
+  .steps_of_work .step-one:after,
+  .steps_of_work .step-two:after,
+  .steps_of_work .step-three:after,
+  .steps_of_work .step-four:after,
+  .steps_of_work .step-five:after {
     display: none; }
+
+  .steps_of_work .step span {
+    height: 90px; }
 
   .customer_reviews {
     margin-top: 0; }

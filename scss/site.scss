@@ -1324,7 +1324,13 @@ span.ui-icon.ui-icon-circle-triangle-w{
   }
   .reviews_slider .orbit{
     height: 690px;
+    .orbit-next, .orbit-previous{
+      display: none!important;
+    }
     .review_wrapper{
+      img{
+        width: 100%;
+      }
       overflow: hidden;
     }
     .orbit-slide .review-slide{

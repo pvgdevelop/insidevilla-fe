@@ -141,7 +141,8 @@ header {
   position: absolute;
   height: 505px;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  overflow-y: hidden; }
   .orbit_form_wrapper .orbit_form {
     margin-top: 505px !important;
     width: 100%;
@@ -1145,7 +1146,8 @@ span.ui-icon.ui-icon-circle-triangle-w {
     margin-top: 0; }
 
   .reviews_slider .orbit {
-    height: 690px; }
+    height: 690px;
+    overflow-y: scroll; }
     .reviews_slider .orbit .orbit-slide .review-slide {
       height: 660px;
       margin-bottom: 10px; }

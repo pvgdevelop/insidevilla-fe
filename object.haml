@@ -83,6 +83,16 @@
                 %input.datepicker#to{:type=>"text", :placeholder=>"Дата"}
               .columns.large-12
                 %a.button{"data-toggle"=>"animatedModal1"} Запросите бронирование
+    %section.mobile_booking
+      %form.fdatepicker
+        .columns.small-6
+          %span Заезд
+          %input.datepicker#from{:type=>"text", :placeholder=>"Дата", " data-toggle"=>"datepicker"}
+        .columns.small-6
+          %span Выезд
+          %input.datepicker#to{:type=>"text", :placeholder=>"Дата"}
+        .columns.small-12
+          %a.button{"data-toggle"=>"animatedModal1"} Запросите бронирование
     %section.object_about
       .row
         .columns.large-8
@@ -316,6 +326,16 @@
           .columns.large-12
             %h4 Карта
         .google_map#google_map
+      %section.mobile_booking
+        %form.fdatepicker
+          .columns.small-6
+            %span Заезд
+            %input.datepicker#from{:type=>"text", :placeholder=>"Дата", " data-toggle"=>"datepicker"}
+          .columns.small-6
+            %span Выезд
+            %input.datepicker#to{:type=>"text", :placeholder=>"Дата"}
+          .columns.small-12
+            %a.button{"data-toggle"=>"animatedModal1"} Запросите бронирование
 
 
     %section.catalogue_accomodations.clearfix

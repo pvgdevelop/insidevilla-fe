@@ -9,6 +9,7 @@
     %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/app.css", :media => "screen", :rel => "stylesheet"}
+    %link{:href => "css/nouislider.min.css", :media => "screen", :rel => "stylesheet"}
     %link{:href => "css/site.css", :media => "screen", :rel => "stylesheet"}
 
     // Price Slider
@@ -101,7 +102,7 @@
                   .columns.large-11.small-12.price_catalogue_filter
                     .row.collapse
                       .small-6.large-3.columns
-                        %input{:placeholder => "Цена от", :type => "text"}
+                        %input#input-number{:placeholder => "Цена от", :type => "text"}
                       .small-6.large-3.columns
                         %input{:placeholder => "Цена до", :type => "text"}
                       .small-12.large-6.columns
@@ -112,16 +113,8 @@
                           %li
                             %input#r2{"data-toggle" => "button", :name => "r-group", :type => "radio"}
                               %label.button{:for => "r2"} бат/сутки
-                    .layout-slider
-                      %input#Slider3{:name => "area", :type => "slider", :value => "25;75"}/
-                    %script{:charset => "utf-8", :type => "text/javascript"}
-                      jQuery("#Slider3").slider({
-                      from: 0,
-                      to:300,
-                      heterogeneity: ['50/100', '75/250'],
-                      limits: false,
-                      step: 1,
-                      skin: "round_plastic" });
+                    #slider-handles
+
                 .columns.large-12.small-12
                   %h5.advanced_search_open Расширенный поиск
                   %hr
@@ -176,7 +169,7 @@
           %button.catalogue_date_filter
             Сортировать по дате
             %i.fa.fa-caret-down
-        .columns.large-4
+        .columns.large-4.medium-6.small-12
           .accomodation_container
             .price
               от
@@ -192,7 +185,7 @@
             %p Вилла Саншайн
             %a.accomodation_about{:href => "#"}
               %button.button Подробнее
-        .columns.large-4
+        .columns.large-4.medium-6.small-12
           .accomodation_container
             .price
               от
@@ -208,7 +201,7 @@
             %p Вилла на берегу
             %a.accomodation_about{:href => "#"}
               %button.button Подробнее
-        .columns.large-4
+        .columns.large-4.medium-6.small-12
           .accomodation_container
             .price
               от
@@ -224,7 +217,7 @@
             %p Вилла в горах
             %a.accomodation_about{:href => "#"}
               %button.button Подробнее
-        .columns.large-4
+        .columns.large-4.medium-6.small-12
           .accomodation_container
             .price
               от
@@ -240,7 +233,7 @@
             %p Вилла Саншайн
             %a.accomodation_about{:href => "#"}
               %button.button Подробнее
-        .columns.large-4
+        .columns.large-4.medium-6.small-12
           .accomodation_container
             .price
               от
@@ -256,7 +249,7 @@
             %p Дом в коттеджном поселке
             %a.accomodation_about{:href => "#"}
               %button.button Подробнее
-        .columns.large-4
+        .columns.large-4.medium-6.small-12
           .accomodation_container
             .price
               от
@@ -272,7 +265,7 @@
             %p Апартаменты под крышей
             %a.accomodation_about{:href => "#"}
               %button.button Подробнее
-        .columns.large-4
+        .columns.large-4.medium-6.small-12
           .accomodation_container
             .price
               от
@@ -288,7 +281,7 @@
             %p Вилла с видом на море
             %a.accomodation_about{:href => "#"}
               %button.button Подробнее
-        .columns.large-4
+        .columns.large-4.medium-6.small-12
           .accomodation_container
             .price
               от
@@ -304,7 +297,7 @@
             %p Вилла Саншайн
             %a.accomodation_about{:href => "#"}
               %button.button Подробнее
-        .columns.large-4.end
+        .columns.large-4.medium-6.small-12.end
           .accomodation_container
             .price
               от
@@ -421,4 +414,5 @@
     %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js")
     %script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js")
     %script(src="js/foundation.js")
+    %script(src="js/nouislider.min.js")
     %script(src="js/app.js")

@@ -9,6 +9,7 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' media='screen' rel='stylesheet'>
     <link href='css/app.css' media='screen' rel='stylesheet'>
+    <link href='css/nouislider.min.css' media='screen' rel='stylesheet'>
     <link href='css/site.css' media='screen' rel='stylesheet'>
     <!-- / Price Slider -->
     <link href='css/jslider.css' media='screen' rel='stylesheet'>
@@ -144,7 +145,7 @@
                   <div class='columns large-11 small-12 price_catalogue_filter'>
                     <div class='row collapse'>
                       <div class='small-6 large-3 columns'>
-                        <input placeholder='Цена от' type='text'>
+                        <input id='input-number' placeholder='Цена от' type='text'>
                       </div>
                       <div class='small-6 large-3 columns'>
                         <input placeholder='Цена до' type='text'>
@@ -164,18 +165,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class='layout-slider'>
-                      <input id='Slider3' name='area' type='slider' value='25;75'>
-                    </div>
-                    <script charset='utf-8' type='text/javascript'>
-                      jQuery("#Slider3").slider({
-                      from: 0,
-                      to:300,
-                      heterogeneity: ['50/100', '75/250'],
-                      limits: false,
-                      step: 1,
-                      skin: "round_plastic" });
-                    </script>
+                    <div id='slider-handles'></div>
                   </div>
                 </div>
                 <div class='columns large-12 small-12'>
@@ -270,7 +260,7 @@
             <i class='fa fa-caret-down'></i>
           </button>
         </div>
-        <div class='columns large-4'>
+        <div class='columns large-4 medium-6 small-12'>
           <div class='accomodation_container'>
             <div class='price'>
               от
@@ -292,7 +282,7 @@
             </a>
           </div>
         </div>
-        <div class='columns large-4'>
+        <div class='columns large-4 medium-6 small-12'>
           <div class='accomodation_container'>
             <div class='price'>
               от
@@ -314,7 +304,7 @@
             </a>
           </div>
         </div>
-        <div class='columns large-4'>
+        <div class='columns large-4 medium-6 small-12'>
           <div class='accomodation_container'>
             <div class='price'>
               от
@@ -336,7 +326,7 @@
             </a>
           </div>
         </div>
-        <div class='columns large-4'>
+        <div class='columns large-4 medium-6 small-12'>
           <div class='accomodation_container'>
             <div class='price'>
               от
@@ -358,7 +348,7 @@
             </a>
           </div>
         </div>
-        <div class='columns large-4'>
+        <div class='columns large-4 medium-6 small-12'>
           <div class='accomodation_container'>
             <div class='price'>
               от
@@ -380,7 +370,7 @@
             </a>
           </div>
         </div>
-        <div class='columns large-4'>
+        <div class='columns large-4 medium-6 small-12'>
           <div class='accomodation_container'>
             <div class='price'>
               от
@@ -402,7 +392,7 @@
             </a>
           </div>
         </div>
-        <div class='columns large-4'>
+        <div class='columns large-4 medium-6 small-12'>
           <div class='accomodation_container'>
             <div class='price'>
               от
@@ -424,7 +414,7 @@
             </a>
           </div>
         </div>
-        <div class='columns large-4'>
+        <div class='columns large-4 medium-6 small-12'>
           <div class='accomodation_container'>
             <div class='price'>
               от
@@ -446,7 +436,7 @@
             </a>
           </div>
         </div>
-        <div class='columns large-4 end'>
+        <div class='columns large-4 medium-6 small-12 end'>
           <div class='accomodation_container'>
             <div class='price'>
               от
@@ -610,6 +600,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
     <script src='js/foundation.js'></script>
+    <script src='js/nouislider.min.js'></script>
     <script src='js/app.js'></script>
   </body>
 </html>

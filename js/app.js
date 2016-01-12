@@ -44,6 +44,37 @@ $(".catalogue_date_filter").click(function () {
   $(".catalogue_date_filter > .fa-caret-down").toggleClass("fa-caret-up");
 });
 
+// Price Range Slider
+
+var handlesSlider = document.getElementById('slider-handles');
+noUiSlider.create(handlesSlider, {
+  start: [ 0, 50000 ],
+  connect: true,
+  step: 1000,
+  range: {
+    'min': [  1000 ],
+    'max': [ 100000 ]
+  }
+});
+
+var valueInput = document.getElementById('input-number');
+// When the slider value changes, update the input and span
+slider.noUiSlider.on('update', function( values, handle ) {
+	if ( handle ) {
+		valueInput.value = values[handle];
+	} else {
+		valueSpan.innerHTML = values[handle];
+	}
+});
+
+// When the input changes, set the slider value
+valueInput.addEventListener('change', function(){
+	slider.noUiSlider.set([null, this.value]);
+});
+
+
+// DatePicker
+
 $(function() {
     $( "#from" ).datepicker({
       defaultDate: "+1w",

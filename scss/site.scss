@@ -897,6 +897,20 @@ select, input{
     }
   }
 }
+table.table_pricing{
+  width: 100%;
+  margin: 25px 0 0 30px;
+  tbody tr:nth-child(even){
+    background: #fff;
+  }
+  tr{
+    background: none;
+    border: 1px solid #ccc;
+  }
+  td{
+    border: 1px solid #ccc;
+  }
+}
 .gray_block .accomodation_container{
   p{
     background: #efefef;
@@ -1100,7 +1114,7 @@ select, input{
 }
 .object_pricing{
   margin-top: 15px;
-  .table_pricing{
+  table.table_pricing{
     width: 100%;
     margin: 5px 0 0 30px;
     text-align: center;
@@ -1285,6 +1299,10 @@ span.ui-icon.ui-icon-circle-triangle-w{
   display: none;
 }
 @media screen and (max-width: 984px){
+  table.table_pricing{
+    width: 100%;
+    margin: 25px 0 0;
+  }
   .mobile_booking{
     display: block;
     padding: 25px 0;

@@ -776,6 +776,17 @@ select, input {
   .more_about .places h4 {
     background: #3399ff; }
 
+table.table_pricing {
+  width: 100%;
+  margin: 25px 0 0 30px; }
+  table.table_pricing tbody tr:nth-child(even) {
+    background: #fff; }
+  table.table_pricing tr {
+    background: none;
+    border: 1px solid #ccc; }
+  table.table_pricing td {
+    border: 1px solid #ccc; }
+
 .gray_block .accomodation_container p {
   background: #efefef;
   text-align: left; }
@@ -948,14 +959,14 @@ select, input {
 
 .object_pricing {
   margin-top: 15px; }
-  .object_pricing .table_pricing {
+  .object_pricing table.table_pricing {
     width: 100%;
     margin: 5px 0 0 30px;
     text-align: center; }
-    .object_pricing .table_pricing tr {
+    .object_pricing table.table_pricing tr {
       background: none;
       border: 1px solid #ccc; }
-    .object_pricing .table_pricing td {
+    .object_pricing table.table_pricing td {
       border: 1px solid #ccc; }
 
 .object_reviews {
@@ -1120,6 +1131,10 @@ span.ui-icon.ui-icon-circle-triangle-w {
   display: none; }
 
 @media screen and (max-width: 984px) {
+  table.table_pricing {
+    width: 100%;
+    margin: 25px 0 0; }
+
   .mobile_booking {
     display: block;
     padding: 25px 0; }

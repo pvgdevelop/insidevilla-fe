@@ -698,7 +698,83 @@
     <!-- / Modal Window -->
     <div class='reveal' data-animation-in='fade-in' data-animation-out='fade-out' data-close-on-click='true' data-reveal='' id='animatedModal1'>
       <h3>Заявка на бронирование</h3>
-      <!-- / Сюда вставляем любую форму -->
+      <div class='row'>
+        <form class='fdatepicker'>
+          <div class='columns large-6 small-6'>
+            <span>Заезд:</span>
+            <input  data-toggle='datepicker' class='datepicker' id='from' placeholder='Дата' type='text'>
+          </div>
+          <div class='columns large-6 small-6'>
+            <span>Отъезд:</span>
+            <input class='datepicker' id='to' placeholder='Дата' type='text'>
+          </div>
+          <div class='columns large-12 small-12'>
+            <label>
+              ФИО:
+              <input placeholder='Ваше имя' type='text'>
+            </label>
+          </div>
+          <div class='columns large-12 small-12'>
+            <label>
+              Номер телефона:
+              <input placeholder='Номер телефона' type='text'>
+            </label>
+          </div>
+          <div class='columns large-12 small-12'>
+            <label>
+              Email:
+              <input placeholder='Ваш Email' type='email'>
+            </label>
+          </div>
+          <div class='columns large-6 small-6'>
+            <label>
+              Взрослых:
+              <input type='number' value='2'>
+            </label>
+          </div>
+          <div class='columns large-6 small-6'>
+            <label>
+              Детей:
+              <input type='number' value='0'>
+            </label>
+          </div>
+          <div class='columns large-12 small-12'>
+            <span>Дополнительно:</span>
+            <div class='row'>
+              <div class='columns large-4 small-6'>
+                <div class='checkbox'>
+                  <input id='checkbox1' type='checkbox'>
+                    <label for='checkbox1'>Аренда транспорта</label>
+                  </input>
+                </div>
+              </div>
+              <div class='columns large-4 small-6'>
+                <div class='checkbox'>
+                  <input id='checkbox1' type='checkbox'>
+                    <label for='checkbox1'>Трансфер из аэропорта</label>
+                  </input>
+                </div>
+              </div>
+              <div class='columns large-4 small-6 end'>
+                <div class='checkbox'>
+                  <input id='checkbox1' type='checkbox'>
+                    <label for='checkbox1'>Эскорт-услуги</label>
+                  </input>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='columns large-12 small-12'>
+            <label>
+              Комментарий:
+              <textarea row='3'></textarea>
+            </label>
+          </div>
+          <div class='columns large-12 small-12'>
+            <div class='button'>Запросите бронирование</div>
+          </div>
+        </form>
+      </div>
       <button aria-label='Close reveal' class='close-button' data-close='' type='button'>
         <span aria-hidden='true'>&times;</span>
       </button>

@@ -495,7 +495,57 @@
     // Modal Window
     #animatedModal1.reveal{"data-animation-in" => "fade-in", "data-animation-out" => "fade-out", "data-close-on-click" => "true", "data-reveal" => ""}
       %h3 Заявка на бронирование
-      // Сюда вставляем любую форму
+      .row
+        %form.fdatepicker
+          .columns.large-6.small-6
+            %span Заезд:
+            %input.datepicker#from{:type=>"text", :placeholder=>"Дата", " data-toggle"=>"datepicker"}
+          .columns.large-6.small-6
+            %span Отъезд:
+            %input.datepicker#to{:type=>"text", :placeholder=>"Дата"}
+          .columns.large-12.small-12
+            %label
+              ФИО:
+              %input{:type=>"text", :placeholder=>"Ваше имя"}
+          .columns.large-12.small-12
+            %label
+              Номер телефона:
+              %input{:type=>"text", :placeholder=>"Номер телефона"}
+          .columns.large-12.small-12
+            %label
+              Email:
+              %input{:type=>"email", :placeholder=>"Ваш Email"}
+          .columns.large-6.small-6
+            %label
+              Взрослых:
+              %input{:type=>"number", :value=>"2"}
+          .columns.large-6.small-6
+            %label
+              Детей:
+              %input{:type=>"number", :value=>"0"}
+          .columns.large-12.small-12
+            %span Дополнительно:
+            .row
+              .columns.large-4.small-6
+                %div.checkbox
+                  %input#checkbox1(type="checkbox")
+                    %label(for="checkbox1") Аренда транспорта
+              .columns.large-4.small-6
+                %div.checkbox
+                  %input#checkbox1(type="checkbox")
+                    %label(for="checkbox1") Трансфер из аэропорта
+              .columns.large-4.small-6.end
+                %div.checkbox
+                  %input#checkbox1(type="checkbox")
+                    %label(for="checkbox1") Эскорт-услуги
+          .columns.large-12.small-12
+            %label
+              Комментарий:
+              %textarea{:row=>"3"}
+          .columns.large-12.small-12
+            .button Запросите бронирование
+
+
       %button.close-button{"aria-label" => "Close reveal", "data-close" => "", :type => "button"}
         %span{"aria-hidden" => "true"} &times;
 
